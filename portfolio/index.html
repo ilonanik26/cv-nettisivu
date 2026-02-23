@@ -5,11 +5,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ilona – Portfolio & CV</title>
         <link rel="stylesheet" href="/styles/styles.css">
+        <script src="scripts/main.js"></script>
+
     </head>
     <body>
+        <nav class="navbar">
+            <div class="nav-left">Ilona</div>
+
+            <div class="nav-right">
+                <a href="#hero">Etusivu</a>
+                <a href="#about">Minusta</a>
+                <a href="#skills">Taidot</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#cv">CV</a>
+                <a href="#contact">Yhteystiedot</a>
+            </div>
+        </nav>
 
         <!-- HERO -->
-        <header class="hero">
+        <header id="hero" class="hero">
             <div class="hero-text">
                 <h1>Ilona Nukulina</h1>
                 <p class="tagline">
@@ -24,7 +38,7 @@
         </header>
 
         <!-- ABOUT -->
-        <section class="about">
+        <section id="about" class="about">
             <h2>Minusta</h2>
             <p>
                 Olen rauhallinen, empaattinen ja visuaalisesti suuntautunut
@@ -35,20 +49,29 @@
         </section>
 
         <!-- SKILLS -->
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2>Taidot</h2>
             <div class="skill-grid">
-                <div class="skill-card">HTML</div>
-                <div class="skill-card">CSS</div>
-                <div class="skill-card">JavaScript</div>
-                <div class="skill-card">Python</div>
-                <div class="skill-card">SQL</div>
-                <div class="skill-card">Figma</div>
+                <div class="skill-card" data-skill="Frontend">Frontend</div>
+                <div class="skill-card" data-skill="Backend">Backend</div>
+                <div class="skill-card" data-skill="UIUX">UI / UX</div>
+                <div class="skill-card" data-skill="Python">Python</div>
+                <div class="skill-card" data-skill="Data">Data -
+                    analytiikka</div>
+                <div class="skill-card" data-skill="Tools">Työkalut</div>
             </div>
         </section>
 
+        <div class="skill-popup" id="skillPopup">
+            <div class="skill-popup-content-glass">
+                <h3 id="popupTitle"></h3>
+                <p id="popupText"></p>
+                <button glass="close-btn">Sulje</button>
+            </div>
+        </div>
+
         <!-- PORTFOLIO -->
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <h2>Portfolio</h2>
             <div class="portfolio-grid">
                 <div class="project-card">
@@ -63,7 +86,7 @@
         </section>
 
         <!-- CV -->
-        <section class="cv">
+        <section id="cv" class="cv">
             <h2>CV</h2>
             <ul>
                 <li><strong>Koulutus:</strong> Tietojenkäsittely, TAMK</li>
@@ -73,7 +96,7 @@
         </section>
 
         <!-- CONTACT -->
-        <footer class="contact">
+        <footer id="contact" class="contact">
             <h2>Yhteystiedot</h2>
             <p>Sähköposti: ilona@example.com</p>
             <p>LinkedIn / GitHub / muut linkit</p>
