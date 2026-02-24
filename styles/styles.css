@@ -359,6 +359,40 @@ section h2::after {
     /* riittää hyvin */
 }
 
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon img,
+.contact-item img {
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
+    transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+.icon:hover img {
+    transform: translateY(-3px);
+    filter: drop-shadow(0 0 10px rgba(100, 200, 255, 0.6));
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.contact-item img:hover {
+    transform: translateY(-3px);
+    filter: drop-shadow(0 0 10px rgba(100, 200, 255, 0.6));
+}
+
 /* ---------- Responsiivisuus ---------- */
 
 @media (max-width: 640px) {
