@@ -1,8 +1,3 @@
-const popup = document.getElementById("skillPopup");
-const popupTitle = document.getElementById("popupTitle");
-const popupText = document.getElementById("popupText");
-const closeBtn = document.querySelector(".close-btn");
-
 const skillInfo = {
     "Frontend": `
         <strong>HTML, CSS, JavaScript</strong><br><br>
@@ -29,6 +24,13 @@ const skillInfo = {
         – Portfolio UI<br>
         – Figma-prototyypit<br>
     `,
+    "Python": `
+        <strong>Python</strong><br><br>
+        Perusteet hallussa: funktiot, luokat, datan käsittely.<br><br>
+        <strong>Projektit:</strong><br>
+        – Data-analytiikka Pandasilla<br>
+        – Pienet harjoitusprojektit<br>
+    `,
     "Data": `
         <strong>Data-analytiikka</strong><br><br>
         Opiskelen parhaillaan kahta kurssia:<br>
@@ -46,15 +48,21 @@ const skillInfo = {
     `
 };
 
-document.querySelectorAll(".skill-card").forEach(card => {
-    card.addEventListener("click", () => {
-        const skill = card.dataset.skill;
-        popupTitle.textContent = skill;
-        popupText.innerHTML = skillInfo[skill];
-        popup.style.display = "flex";
-    });
-});
+document.querySelectorAll(".skill-toggle").forEach(button => {
+    button.addEventListener("click", () => {
+        const skill = button.dataset.skill;
+        const content = button.nextElementSibling;
 
-closeBtn.addEventListener("click", () => {
-    popup.style.display = "none";
+        // toggle arrow
+        button.classList.toggle("open");
+
+        // toggle content
+        if (content.classList.contains("open")) {
+            content.classList.remove("open");
+            content.innerHTML = "";
+        } else {
+            content.classList.add("open");
+            content.innerHTML = skillInfo[skill];
+        }
+    });
 });
