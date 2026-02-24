@@ -395,6 +395,14 @@ section h2::after {
     display: block;
 }
 
+.social-icons img,
+.contact-item img {
+    width: 32px;
+    height: 32px;
+    filter: none;
+    background: none;
+}
+
 .contact-item img:hover {
     transform: translateY(-3px);
     filter: drop-shadow(0 0 10px rgba(100, 200, 255, 0.6));
