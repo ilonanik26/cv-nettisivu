@@ -367,12 +367,13 @@ section h2::after {
     margin-top: 20px;
 }
 
-.icon img,
-.contact-item img {
+
+.social-icons img {
     width: 32px;
     height: 32px;
-    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.2));
-    transition: transform 0.2s ease, filter 0.3s ease;
+    display: block;
+    filter: none;
+    /* poistaa varjot jos et halua */
 }
 
 .icon:hover img {
@@ -386,6 +387,12 @@ section h2::after {
     gap: 10px;
     font-weight: 600;
     color: #fff;
+}
+
+.contact-item img {
+    width: 28px;
+    height: 28px;
+    display: block;
 }
 
 .contact-item img:hover {
