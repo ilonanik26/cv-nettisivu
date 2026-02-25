@@ -189,7 +189,19 @@ section h2::after {
 
 .skill-content.open {
     padding: 20px;
-    max-height: 500px;
+    max-height: 300px;
+    /* voit säätää korkeutta */
+    overflow-y: auto;
+    /* tämä lisää scrollauksen */
+}
+
+.skill-content.open::-webkit-scrollbar {
+    width: 6px;
+}
+
+.skill-content.open::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
 /* ---------- Footer ---------- */
@@ -224,6 +236,81 @@ section h2::after {
     padding: 24px 20px;
     border: 2px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
+}
+
+/* Karusellin kontti */
+.tool-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Yksi raita, joka liikkuu loputtomasti */
+.tool-track {
+    display: flex;
+    gap: 40px;
+    animation: scroll 35s linear infinite;
+}
+
+/* Infinite loop yhdellä raidalla */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Hover pysäyttää karusellin */
+.tool-carousel:hover .tool-track {
+    animation-play-state: paused;
+}
+
+/* Logot */
+.tool-item img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    transition: transform 0.25s ease, filter 0.25s ease;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Revontuli-hehku hoverissa */
+.tool-item:hover img {
+    transform: scale(1.2);
+    filter:
+        drop-shadow(0 0 12px rgba(0, 255, 255, 0.8)) drop-shadow(0 0 18px rgba(180, 0, 255, 0.6)) drop-shadow(0 0 24px rgba(0, 150, 255, 0.7));
+}
+
+/* Tooltip */
+.tool-item {
+    position: relative;
+}
+
+.tool-item::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: #111;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    white-space: nowrap;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.tool-item:hover::after {
+    opacity: 1;
 }
 
 /* ---------- Responsiivisuus ---------- */
