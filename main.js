@@ -206,7 +206,7 @@ const skillInfo = {
     <div class="tool-carousel">
         <div class="tool-track">
 
-            <div class="tool-item" data-name="HTML"><img src="../images/logos/html.svg"></div>
+            <div class="tool-item" data-name="HTML"><img src="../cv-nettisivu/images/logos/html.svg"></div>
             <div class="tool-item" data-name="CSS"><img src="../images/logos/css.svg"></div>
             <div class="tool-item" data-name="JavaScript"><img src="../images/logos/js.svg"></div>
             <div class="tool-item" data-name="Vue.js"><img src="../images/logos/vue.svg"></div>
