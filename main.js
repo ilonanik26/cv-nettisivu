@@ -207,22 +207,22 @@ const skillInfo = {
         <div class="tool-track">
 
             <div class="tool-item" data-name="HTML"><img src="../cv-nettisivu/images/logos/html.svg"></div>
-            <div class="tool-item" data-name="CSS"><img src="../images/logos/css.svg"></div>
-            <div class="tool-item" data-name="JavaScript"><img src="../images/logos/js.svg"></div>
-            <div class="tool-item" data-name="Vue.js"><img src="../images/logos/vue.svg"></div>
-            <div class="tool-item" data-name="React"><img src="../images/logos/react.svg"></div>
-            <div class="tool-item" data-name="Python"><img src="../images/logos/python.svg"></div>
-            <div class="tool-item" data-name="Java"><img src="../images/logos/java.svg"></div>
-            <div class="tool-item" data-name="SQL"><img src="../images/logos/sql.svg"></div>
-            <div class="tool-item" data-name="Git"><img src="../images/logos/git.svg"></div>
-            <div class="tool-item" data-name="GitHub"><img src="../images/logos/github.svg"></div>
-            <div class="tool-item" data-name="VS Code"><img src="../images/logos/vs-code.svg"></div>
-            <div class="tool-item" data-name="Docker"><img src="../images/logos/docker.svg"></div>
-            <div class="tool-item" data-name="Power BI"><img src="../images/logos/powerbi.svg"></div>
-            <div class="tool-item" data-name="Linux"><img src="../images/logos/linux.svg"></div>
-            <div class="tool-item" data-name="Figma"><img src="../images/logos/figma.svg"></div>
-            <div class="tool-item" data-name="Photoshop"><img src="../images/logos/photoshop.svg"></div>
-            <div class="tool-item" data-name="Framer"><img src="../images/logos/framer.svg"></div>
+            <div class="tool-item" data-name="CSS"><img src="../cv-nettisivu/images/logos/css.svg"></div>
+            <div class="tool-item" data-name="JavaScript"><img src="../cv-nettisivu/images/logos/js.svg"></div>
+            <div class="tool-item" data-name="Vue.js"><img src="../cv-nettisivu/images/logos/vue.svg"></div>
+            <div class="tool-item" data-name="React"><img src="../cv-nettisivu/images/logos/react.svg"></div>
+            <div class="tool-item" data-name="Python"><img src="../cv-nettisivu/images/logos/python.svg"></div>
+            <div class="tool-item" data-name="Java"><img src="../cv-nettisivu/images/logos/java.svg"></div>
+            <div class="tool-item" data-name="SQL"><img src="../cv-nettisivu/images/logos/sql.svg"></div>
+            <div class="tool-item" data-name="Git"><img src="../cv-nettisivu/images/logos/git.svg"></div>
+            <div class="tool-item" data-name="GitHub"><img src="../cv-nettisivu/images/logos/github.svg"></div>
+            <div class="tool-item" data-name="VS Code"><img src="../cv-nettisivu/images/logos/vs-code.svg"></div>
+            <div class="tool-item" data-name="Docker"><img src="../cv-nettisivu/images/logos/docker.svg"></div>
+            <div class="tool-item" data-name="Power BI"><img src="../cv-nettisivu/images/logos/powerbi.svg"></div>
+            <div class="tool-item" data-name="Linux"><img src="../cv-nettisivu/images/logos/linux.svg"></div>
+            <div class="tool-item" data-name="Figma"><img src="../cv-nettisivu/images/logos/figma.svg"></div>
+            <div class="tool-item" data-name="Photoshop"><img src="../cv-nettisivu/images/logos/photoshop.svg"></div>
+            <div class="tool-item" data-name="Framer"><img src="../cv-nettisivu/images/logos/framer.svg"></div>
 
         </div>
     </div>
