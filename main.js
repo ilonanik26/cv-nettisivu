@@ -222,7 +222,7 @@ const skillInfo = {
             <div class="tool-item" data-name="Linux"><img src="../cv-nettisivu/images/logos/linux.svg"></div>
             <div class="tool-item" data-name="Figma"><img src="../cv-nettisivu/images/logos/figma.svg"></div>
             <div class="tool-item" data-name="Photoshop"><img src="../cv-nettisivu/images/logos/photoshop.svg"></div>
-            <div class="tool-item" data-name="Framer"><img src="./cv-nettisivu/images/logos/framer.svg"></div>
+            <div class="tool-item" data-name="Framer"><img src="../cv-nettisivu/images/logos/framer.svg"></div>
 
         </div>
     </div>
