@@ -206,28 +206,31 @@ const skillInfo = {
     <div class="tool-carousel">
         <div class="tool-track">
 
-            <div class="tool-item" data-name="HTML"><img src="images/logos/html.png"></div>
-            <div class="tool-item" data-name="CSS"><img src="images/logos/css.png"></div>
-            <div class="tool-item" data-name="JavaScript"><img src="images/logos/js.png"></div>
-            <div class="tool-item" data-name="Vue.js"><img src="images/logos/vue.png"></div>
-            <div class="tool-item" data-name="React"><img src="images/logos/react.png"></div>
-            <div class="tool-item" data-name="Python"><img src="images/logos/python.png"></div>
-            <div class="tool-item" data-name="Java"><img src="images/logos/java.png"></div>
-            <div class="tool-item" data-name="SQL"><img src="images/logos/sql.png"></div>
-            <div class="tool-item" data-name="Git"><img src="images/logos/git.png"></div>
-            <div class="tool-item" data-name="GitHub"><img src="images/logos/github.png"></div>
-            <div class="tool-item" data-name="VS Code"><img src="images/logos/vscode.png"></div>
-            <div class="tool-item" data-name="Docker"><img src="images/logos/docker.png"></div>
-            <div class="tool-item" data-name="Power BI"><img src="images/logos/powerbi.png"></div>
-            <div class="tool-item" data-name="Linux"><img src="images/logos/linux.png"></div>
-            <div class="tool-item" data-name="Figma"><img src="images/logos/figma.png"></div>
-            <div class="tool-item" data-name="Figma"><img src="images/logos/figma.png"></div>
+            <div class="tool-item" data-name="HTML"><img src="../images/logos/html.svg"></div>
+            <div class="tool-item" data-name="CSS"><img src="../images/logos/css.svg"></div>
+            <div class="tool-item" data-name="JavaScript"><img src="../images/logos/js.svg"></div>
+            <div class="tool-item" data-name="Vue.js"><img src="../images/logos/vue.svg"></div>
+            <div class="tool-item" data-name="React"><img src="../images/logos/react.svg"></div>
+            <div class="tool-item" data-name="Python"><img src="../images/logos/python.svg"></div>
+            <div class="tool-item" data-name="Java"><img src="../images/logos/java.svg"></div>
+            <div class="tool-item" data-name="SQL"><img src="../images/logos/sql.svg"></div>
+            <div class="tool-item" data-name="Git"><img src="../images/logos/git.svg"></div>
+            <div class="tool-item" data-name="GitHub"><img src="../images/logos/github.svg"></div>
+            <div class="tool-item" data-name="VS Code"><img src="../images/logos/vs-code.svg"></div>
+            <div class="tool-item" data-name="Docker"><img src="../images/logos/docker.svg"></div>
+            <div class="tool-item" data-name="Power BI"><img src="../images/logos/powerbi.svg"></div>
+            <div class="tool-item" data-name="Linux"><img src="../images/logos/linux.svg"></div>
+            <div class="tool-item" data-name="Figma"><img src="../images/logos/figma.svg"></div>
+            <div class="tool-item" data-name="Photoshop"><img src="../images/logos/photoshop.svg"></div>
+            <div class="tool-item" data-name="Framer"><img src="../images/logos/framer.svg"></div>
 
         </div>
     </div>
 `,
 
 };
+
+
 
 document.querySelectorAll(".skill-toggle").forEach(button => {
     button.addEventListener("click", () => {
@@ -247,3 +250,19 @@ document.querySelectorAll(".skill-toggle").forEach(button => {
         }
     });
 });
+
+window.addEventListener("load", () => {
+    const track = document.getElementById("toolTrack");
+
+    // kloonataan raita
+    const clone = track.cloneNode(true);
+    clone.id = "toolTrackClone";
+    track.parentNode.appendChild(clone);
+
+    // lasketaan raidan leveys
+    const trackWidth = track.scrollWidth;
+
+    // asetetaan CSS-muuttuja
+    document.documentElement.style.setProperty("--track-width", trackWidth + "px");
+});
+

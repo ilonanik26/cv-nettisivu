@@ -246,17 +246,23 @@ section h2::after {
     padding: 10px 0;
 }
 
-/* Yksi raita, joka liikkuu loputtomasti */
-.tool-track {
+/* Molemmat raidat liikkuvat */
+.tool-track,
+#toolTrackClone {
     display: flex;
     gap: 40px;
+    white-space: nowrap;
     animation: scroll 35s linear infinite;
 }
 
-/* Infinite loop yhdellä raidalla */
+/* Klooniraita alkaa puolivälistä → täydellinen loop */
+#toolTrackClone {
+    animation-delay: 30s;
+}
+
 @keyframes scroll {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
 
     100% {
@@ -264,8 +270,9 @@ section h2::after {
     }
 }
 
-/* Hover pysäyttää karusellin */
-.tool-carousel:hover .tool-track {
+/* Hover pysäyttää */
+.tool-carousel:hover .tool-track,
+.tool-carousel:hover #toolTrackClone {
     animation-play-state: paused;
 }
 
@@ -278,7 +285,7 @@ section h2::after {
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25));
 }
 
-/* Revontuli-hehku hoverissa */
+/* Revontuli-hehku */
 .tool-item:hover img {
     transform: scale(1.2);
     filter:
@@ -312,6 +319,60 @@ section h2::after {
 .tool-item:hover::after {
     opacity: 1;
 }
+
+.portfolio {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    text-decoration: none;
+    color: #222;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
+    box-shadow: 0 0 0px rgba(0, 255, 180, 0.0);
+}
+
+.project-card img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 255, 200, 0.6), 0 0 30px rgba(0, 180, 255, 0.4), 0 0 45px rgba(0, 120, 255, 0.3);
+}
+
+.project-card h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.project-card p {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #555;
+}
+
 
 /* ---------- Responsiivisuus ---------- */
 
