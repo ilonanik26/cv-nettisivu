@@ -373,18 +373,77 @@ section h2::after {
 
 /* ---------- Responsiivisuus ---------- */
 
+/* Tabletit ja pienet läppärit (max 1024px) */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 40px 30px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    section {
+        padding: 40px 30px;
+    }
+}
+
+/* Puhelimet (max 640px) */
 @media (max-width: 640px) {
     .hero {
         padding: 28px 20px;
         flex-direction: column;
         text-align: center;
+        gap: 16px;
     }
 
     .hero h1 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .project-card img {
+        height: 200px;
     }
 
     section {
         padding: 22px 18px 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Pienet puhelimet (max 400px) */
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+
+    .portfolio-grid {
+        gap: 14px;
     }
 }
