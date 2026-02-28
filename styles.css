@@ -429,6 +429,10 @@ section h2::after {
         flex-direction: column;
         text-align: center;
         gap: 16px;
+        background-size: contain;
+        /* Ei venytä liikaa */
+        background-position: top center;
+        background-color: #000;
     }
 
     .hero h1 {
