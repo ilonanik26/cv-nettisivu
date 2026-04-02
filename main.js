@@ -10,7 +10,7 @@ const translations = {
         },
         hero: {
             name: "Ilona Nikulina",
-            tagline: "Toisen vuoden tietojenkäsittelyn opiskelija, joka rakentaa moderneja käyttöliittymiä ja kehittää osaamistaan kohti uraa frontend-kehityksessä.",
+            tagline: "Toisen vuoden tietojenkäsittelyn opiskelija, joka yrittää ja tykkää rakentaa moderneja käyttöliittymiä ja kehittää osaamistaan kohti uraa.",
             cta: "Katso projektit"
         },
         about: {
@@ -160,7 +160,7 @@ const translations = {
         },
         hero: {
             name: "Ilona Nikulina",
-            tagline: "Second-year Business Information Technology student building modern interfaces and growing toward a career in frontend development.",
+            tagline: "Second-year Business Information Technology student who tries and likes to build modern interfaces and growing toward a career.",
             cta: "View Projects"
         },
         about: {
