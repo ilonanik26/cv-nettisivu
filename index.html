@@ -3,11 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ilona – Portfolio & CV</title>
+        <meta
+            name="description"
+            content="Ilona Nikulinan portfolio ja CV - frontendista, UI/UX:stä, Pythonista ja projekteista kiinnostuneen tietojenkäsittelyn opiskelijan sivu.">
+        <title>Ilona Nikulina | Portfolio & CV</title>
         <link rel="stylesheet" href="../cv-nettisivu/styles.css">
     </head>
     <body>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Päänavigaatio">
             <div class="nav-left">Ilona</div>
 
             <div class="nav-right">
@@ -20,230 +23,252 @@
             </div>
         </nav>
 
-        <!-- HERO -->
         <header id="hero" class="hero">
             <div class="hero-text">
                 <h1>Ilona Nikulina</h1>
                 <p class="tagline">
-                    Toisen vuoden tietojenkäsittelyn opiskelija, joka yrittää
-                    rakentaa moderneja käyttöliittymiä ja kehittää taitojaan
-                    kohti uraa 🚀 .
+                    Toisen vuoden tietojenkäsittelyn opiskelija, joka rakentaa
+                    moderneja käyttöliittymiä ja kehittää osaamistaan kohti
+                    uraa frontend-kehityksessä.
                 </p>
             </div>
 
             <div class="hero-image">
-                <img src="../cv-nettisivu/images/mypic.png" alt="Ilona">
+                <img src="../cv-nettisivu/images/mypic.png"
+                    alt="Muotokuva Ilona Nikulinasta">
             </div>
         </header>
 
-        <!-- ABOUT -->
-        <section id="about" class="about">
-            <h2>Minusta</h2>
-            <p>
-                Olen 20‑vuotias Tampereella asuva tietojenkäsittelyn opiskelija,
-                ja opiskelen parhaillani toista vuotta TAMKissa. Suuntaudun
-                mieluusti frontend‑kehitykseen, koska rakastan yhdistää
-                visuaalisuuden, logiikan ja käytettävyyden. HTML, CSS,
-                JavaScript ja modernit työkalut kuten Vue ovat tällä hetkellä
-                suurimmat kiinnostuksenkohteeni, mutta opiskelen innolla myös
-                muita teknologioita — Javaa, Pythonia, SQL:ää sekä
-                data‑analytiikkaa, josta olen viime aikoina innostunut
-                erityisesti ja olen valmis harjoitella näitä työpaikalla.
-            </p>
-            <p> Olen luonteeltani rauhallinen, empaattinen ja helposti
-                innostuva. Viihdyn hyvin kotona koodaamassa omia ideoitani,
-                opiskelemassa uutta tai pelaamassa pleikkarilla, mutta nautin
-                myös keskusteluista ja uusien ihmisten tapaamisesta. Saan paljon
-                inspiraatiota ympärilläni olevista ihmisistä — erityisesti
-                vanhemmistani ja poikaystävästäni, jotka ovat suurimpia
-                motivaation lähteitäni.
-            </p>
-            <p>
-                Vapaa‑ajalla tykkään käydä lenkillä, nauttia kauniista
-                maisemista ja liikkua salilla. Rakastan koiria, ja unelmoin että
-                pääsen
-                pian hankkimaan oman pienen karvakaverin 🐶.
-            </p>
-            <p>
-                Tällä hetkellä etsin harjoittelu‑ tai kesätyöpaikkaa, ja olen
-                avoin myös junior‑tason rooleille. Haluan kehittyä taitavaksi
-                frontend‑kehittäjäksi ja päästä osaksi tiimiä, jossa voin oppia,
-                kasvaa ja tuoda oman panokseni projekteihin.
-            </p>
-        </section>
+        <main>
+            <section id="about" class="about">
+                <h2>Minusta</h2>
 
-        <section id="cv" class="cv">
-            <h2>CV</h2>
-            <ul>
-                <li>
-                    <strong>Koulutus:</strong>
-                    Tietojenkäsittely, TAMK (2024–2027)
-                    – painotus web-kehityksessä, käyttöliittymissä ja frontissa.
-                </li>
+                <p>
+                    Olen 20-vuotias Tampereella asuva tietojenkäsittelyn
+                    opiskelija, ja opiskelen parhaillani toista vuotta TAMKissa.
+                    Suuntaudun mielelläni frontend-kehitykseen, koska pidän
+                    visuaalisuuden, logiikan ja käytettävyyden yhdistämisestä.
+                    HTML, CSS, JavaScript ja modernit työkalut kuten Vue ovat
+                    tällä hetkellä suurimpia kiinnostuksenkohteitani, mutta
+                    opiskelen innolla myös muita teknologioita, kuten Javaa,
+                    Pythonia, SQL:ää sekä data-analytiikkaa.
+                </p>
 
-                <li>
-                    <strong>Työkokemus & projektit:</strong>
-                    Itsenäisiä ja kouluprojekteja, mm.:
-                    <ul>
-                        <li>Budjetointisovellus (Vue.js + Vite)</li>
-                        <li>Pelisivusto / esittelysivu (Nostalgy School
-                            Run)</li>
-                        <li>Poshlaya Molly ‑fanisivu (visuaalinen brändäys +
-                            layout)</li>
-                        <li>Python tekstiseikkailupeli</li>
-                        <li>Käyttöliitymän suunnittelu Figmassa</li>
-                        <li>Power Bi pieniä projekteja</li>
-                    </ul>
-                </li>
+                <p>
+                    Olen luonteeltani rauhallinen, empaattinen ja helposti
+                    innostuva. Viihdyn hyvin kotona koodaamassa omia ideoitani,
+                    opiskelemassa uutta tai pelaamassa, mutta nautin myös
+                    keskusteluista ja uusien ihmisten tapaamisesta. Saan paljon
+                    inspiraatiota ympärilläni olevista ihmisistä, erityisesti
+                    vanhemmistani ja poikaystävästäni, jotka ovat minulle
+                    tärkeitä motivaation lähteitä.
+                </p>
 
-                <li>
-                    <strong>Tekniset taidot:</strong>
-                    HTML, CSS, JavaScript, Vue.js, Vite, Git & GitHub,
-                    responsiivinen suunnittelu,
-                    perus-UI/UX, Figma, Java, SQL, Power Bi, Windows-työkalut,
-                    Mac osaamista.
-                </li>
+                <p>
+                    Vapaa-ajalla tykkään käydä lenkillä, nauttia kauniista
+                    maisemista ja liikkua salilla. Rakastan koiria, ja unelmoin
+                    siitä, että pääsen vielä hankkimaan oman pienen
+                    karvakaverin.
+                </p>
 
-                <li>
-                    <strong>Kurssit & osaamisalueet:</strong>
-                    WWW-tekniikat, ohjelmoinnin perusteet, fullstack,
-                    olio-ohjelmointi, käyttäjäkeskeinen suunnittelu,
-                    UX/UI, Python, data-analytiikka, tekoäly ja data -projekti,
-                    ryhmäprojektit ja projektityöskentely.
-                </li>
+                <p>
+                    Tällä hetkellä etsin harjoittelu- tai kesätyöpaikkaa ja
+                    olen avoin myös junior-tason rooleille. Haluan kehittyä
+                    taitavaksi frontend-kehittäjäksi ja päästä osaksi tiimiä,
+                    jossa voin oppia, kasvaa ja tuoda oman panokseni
+                    projekteihin.
+                </p>
+            </section>
 
-                <li>
-                    <strong>Kielitaito:</strong>
-                    Suomi (C2), englanti (B2), venäjä (äidinkieli).
-                </li>
-            </ul>
-        </section>
+            <section id="cv" class="cv">
+                <h2>CV</h2>
 
-        <!-- SKILLS -->
-        <section id="skills" class="skills">
-            <h2>Taidot</h2>
+                <ul>
+                    <li>
+                        <strong>Koulutus:</strong>
+                        Tietojenkäsittely, TAMK (2024-2027) - painotus
+                        web-kehityksessä, käyttöliittymissä ja frontendissä.
+                    </li>
 
-            <div class="skill-item">
-                <button class="skill-toggle" data-skill="Frontend">
-                    Frontend
-                    <span class="arrow">▼</span>
-                </button>
-                <div class="skill-content"></div>
-            </div>
+                    <li>
+                        <strong>Työkokemus ja projektit:</strong>
+                        Itsenäisiä ja kouluprojekteja, esimerkiksi:
+                        <ul>
+                            <li>Budjetointisovellus (Vue.js + Vite)</li>
+                            <li>Pelisivusto / esittelysivu (Nostalgy School
+                                Run)</li>
+                            <li>Poshlaya Molly -fanisivu</li>
+                            <li>Python-tekstiseikkailupeli</li>
+                            <li>Käyttöliittymäsuunnittelu Figmassa</li>
+                            <li>Pieniä Power BI -projekteja</li>
+                        </ul>
+                    </li>
 
-            <div class="skill-item">
-                <button class="skill-toggle" data-skill="Backend">
-                    Backend
-                    <span class="arrow">▼</span>
-                </button>
-                <div class="skill-content"></div>
-            </div>
+                    <li>
+                        <strong>Tekniset taidot:</strong>
+                        HTML, CSS, JavaScript, Vue.js, Vite, Git, GitHub,
+                        responsiivinen suunnittelu, UI/UX-perusteet, Figma,
+                        Java, SQL, Power BI, Windows-työkalut ja macOS.
+                    </li>
 
-            <div class="skill-item">
-                <button class="skill-toggle" data-skill="UIUX">
-                    UI / UX
-                    <span class="arrow">▼</span>
-                </button>
-                <div class="skill-content"></div>
-            </div>
+                    <li>
+                        <strong>Kurssit ja osaamisalueet:</strong>
+                        WWW-tekniikat, ohjelmoinnin perusteet, fullstack,
+                        olio-ohjelmointi, käyttäjäkeskeinen suunnittelu, UI/UX,
+                        Python, data-analytiikka, tekoäly ja data -projekti,
+                        ryhmäprojektit ja projektityöskentely.
+                    </li>
 
-            <div class="skill-item">
-                <button class="skill-toggle" data-skill="Python">
-                    Python
-                    <span class="arrow">▼</span>
-                </button>
-                <div class="skill-content"></div>
-            </div>
+                    <li>
+                        <strong>Kielitaito:</strong>
+                        Suomi (C2), englanti (B2), venäjä (äidinkieli).
+                    </li>
+                </ul>
+            </section>
 
-            <div class="skill-item">
-                <button class="skill-toggle" data-skill="Data">
-                    Data-analytiikka
-                    <span class="arrow">▼</span>
-                </button>
-                <div class="skill-content"></div>
-            </div>
+            <section id="skills" class="skills">
+                <h2>Taidot</h2>
 
-            <div class="skill-item">
-                <button class="skill-toggle" data-skill="Tools">
-                    Työkalut
-                    <span class="arrow">▼</span>
-                </button>
-                <div class="skill-content"></div>
-            </div>
-        </section>
+                <div class="skill-item">
+                    <button class="skill-toggle" data-skill="Frontend"
+                        type="button" aria-expanded="false">
+                        Frontend
+                        <span class="arrow" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="skill-content"></div>
+                </div>
 
-        <!-- PORTFOLIO -->
-        <section id="portfolio" class="portfolio">
-            <h2>Portfolio</h2>
+                <div class="skill-item">
+                    <button class="skill-toggle" data-skill="Backend"
+                        type="button" aria-expanded="false">
+                        Backend
+                        <span class="arrow" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="skill-content"></div>
+                </div>
 
-            <div class="portfolio-grid">
+                <div class="skill-item">
+                    <button class="skill-toggle" data-skill="UIUX" type="button"
+                        aria-expanded="false">
+                        UI / UX
+                        <span class="arrow" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="skill-content"></div>
+                </div>
 
-                <a href="https://ilonanik26.github.io/budjet-app/"
-                    class="project-card" target="_blank">
-                    <img src="../cv-nettisivu/images/budjet-app.png"
-                        alt="Budjet App">
-                    <h3>Budjet App</h3>
-                    <p>Budjetointisovellus Vue.js + Vite.</p>
-                </a>
+                <div class="skill-item">
+                    <button class="skill-toggle" data-skill="Python"
+                        type="button" aria-expanded="false">
+                        Python
+                        <span class="arrow" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="skill-content"></div>
+                </div>
 
-                <a href="https://ilonanik26.github.io/game-website/index.html"
-                    class="project-card" target="_blank">
-                    <img src="../cv-nettisivu/images/game.png"
-                        alt="Game Website">
-                    <h3>Game Website</h3>
-                    <p>Peliin liittyvä esittelysivu.</p>
-                </a>
+                <div class="skill-item">
+                    <button class="skill-toggle" data-skill="Data" type="button"
+                        aria-expanded="false">
+                        Data-analytiikka
+                        <span class="arrow" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="skill-content"></div>
+                </div>
 
-                <a href="https://ilonanik26.github.io/poshly-molly-web-site/"
-                    class="project-card" target="_blank">
-                    <img src="../cv-nettisivu/images/poshlaya-molly.png"
-                        alt="Poshlaya Molly">
-                    <h3>Poshlaya Molly nettisivu</h3>
-                    <p>Minun lemppi bändin esittely-nettisivu.</p>
-                </a>
+                <div class="skill-item">
+                    <button class="skill-toggle" data-skill="Tools"
+                        type="button" aria-expanded="false">
+                        Työkalut
+                        <span class="arrow" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="skill-content"></div>
+                </div>
+            </section>
 
-            </div>
-        </section>
+            <section id="portfolio" class="portfolio">
+                <h2>Portfolio</h2>
 
-        <!-- CONTACT -->
+                <div class="portfolio-grid">
+                    <a
+                        href="https://ilonanik26.github.io/budjet-app/"
+                        class="project-card"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="../cv-nettisivu/images/budjet-app.png"
+                            alt="Esikatselu Budjet App -projektista">
+                        <h3>Budjet App</h3>
+                        <p>Budjetointisovellus, joka on toteutettu Vue.js:llä ja
+                            Vitellä.</p>
+                    </a>
+
+                    <a
+                        href="https://ilonanik26.github.io/game-website/index.html"
+                        class="project-card"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="../cv-nettisivu/images/game.png"
+                            alt="Esikatselu Game Website -projektista">
+                        <h3>Game Website</h3>
+                        <p>Peliin liittyvä esittelysivu ja visuaalinen
+                            verkkoprojekti.</p>
+                    </a>
+
+                    <a
+                        href="https://ilonanik26.github.io/poshly-molly-web-site/"
+                        class="project-card"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="../cv-nettisivu/images/poshlaya-molly.png"
+                            alt="Esikatselu Poshlaya Molly -sivusta">
+                        <h3>Poshlaya Molly -nettisivu</h3>
+                        <p>Fanisivu lempibändilleni, jossa keskityin
+                            visuaaliseen ilmeeseen ja rakenteeseen.</p>
+                    </a>
+                </div>
+            </section>
+        </main>
+
         <footer id="contact" class="contact">
             <h2>Yhteystiedot</h2>
 
             <div class="social-icons">
-
-                <!-- GitHub -->
-                <a href="https://github.com/ilonanik26" target="_blank"
-                    class="icon">
+                <a
+                    href="https://github.com/ilonanik26"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="icon"
+                    aria-label="GitHub-profiili">
                     <img src="../cv-nettisivu/images/github.svg" alt="GitHub">
                 </a>
 
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/ilonanikulinaa"
+                <a
+                    href="https://www.linkedin.com/in/ilonanikulinaa"
                     target="_blank"
-                    class="icon">
+                    rel="noopener noreferrer"
+                    class="icon"
+                    aria-label="LinkedIn-profiili">
                     <img src="../cv-nettisivu/images/linkedin.svg"
                         alt="LinkedIn">
                 </a>
 
-                <!-- Telegram -->
-                <a href="https://t.me/ilonanikulinaa" target="_blank"
-                    class="icon">
+                <a
+                    href="https://t.me/ilonanikulinaa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="icon"
+                    aria-label="Telegram-profiili">
                     <img src="../cv-nettisivu/images/telegram.svg"
                         alt="Telegram">
                 </a>
 
-                <!-- Sähköposti -->
                 <div class="contact-item">
-                    <img src="../cv-nettisivu/images/mail.svg" alt="Email">
+                    <img src="../cv-nettisivu/images/mail.svg" alt="Sähköposti">
                     <span>ilona.nikulinaa@gmail.com</span>
                 </div>
 
-                <!-- Puhelin -->
                 <div class="contact-item">
-                    <img src="../cv-nettisivu/images/phone.svg" alt="Phone">
+                    <img src="../cv-nettisivu/images/phone.svg" alt="Puhelin">
                     <span>+358 44 246 4729</span>
                 </div>
-
             </div>
         </footer>
 
