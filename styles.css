@@ -396,30 +396,31 @@ section h2::after,
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 12px 0 28px;
+    padding: 10px 0 30px;
 }
 
 .tool-track,
 #toolTrackClone {
     display: flex;
     align-items: center;
-    gap: 40px;
-    white-space: nowrap;
-    animation: scroll 35s linear infinite;
+    gap: 34px;
     width: max-content;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    animation: tool-scroll 24s linear infinite;
 }
 
 #toolTrackClone {
-    animation-delay: 17.5s;
+    margin-left: 34px;
 }
 
-@keyframes scroll {
-    0% {
+@keyframes tool-scroll {
+    from {
         transform: translateX(0);
     }
 
-    100% {
-        transform: translateX(-100%);
+    to {
+        transform: translateX(calc(-50% - 17px));
     }
 }
 
@@ -430,19 +431,20 @@ section h2::after,
 
 .tool-item {
     position: relative;
-    flex-shrink: 0;
+    flex: 0 0 auto;
 }
 
 .tool-item img {
     width: 48px;
     height: 48px;
     object-fit: contain;
+    display: block;
     transition: transform 0.25s ease, filter 0.25s ease;
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.25));
 }
 
 .tool-item:hover img {
-    transform: scale(1.16);
+    transform: scale(1.14);
     filter:
         drop-shadow(0 0 10px rgba(255, 90, 220, 0.65)) drop-shadow(0 0 16px rgba(124, 103, 255, 0.5)) drop-shadow(0 0 22px rgba(45, 183, 255, 0.6));
 }
@@ -450,7 +452,7 @@ section h2::after,
 .tool-item::after {
     content: attr(data-name);
     position: absolute;
-    bottom: -38px;
+    bottom: -36px;
     left: 50%;
     transform: translateX(-50%);
     background: rgba(7, 18, 28, 0.92);

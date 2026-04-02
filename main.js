@@ -138,9 +138,9 @@ const translations = {
                         <div class="tool-item" data-name="Power BI"><img src="../cv-nettisivu/images/logos/powerbi.svg" alt="Power BI"></div>
                         <div class="tool-item" data-name="Linux"><img src="../cv-nettisivu/images/logos/linux.svg" alt="Linux"></div>
                         <div class="tool-item" data-name="Figma"><img src="../cv-nettisivu/images/logos/figma.svg" alt="Figma"></div>
-                    </div>
-                </div>
-            `
+        </div>
+    </div>
+`
         }
     },
 
@@ -283,8 +283,8 @@ const translations = {
                         <div class="tool-item" data-name="Power BI"><img src="../cv-nettisivu/images/logos/powerbi.svg" alt="Power BI"></div>
                         <div class="tool-item" data-name="Linux"><img src="../cv-nettisivu/images/logos/linux.svg" alt="Linux"></div>
                         <div class="tool-item" data-name="Figma"><img src="../cv-nettisivu/images/logos/figma.svg" alt="Figma"></div>
-                    </div>
-                </div>
+        </div>
+    </div>
             `
         }
     }
@@ -347,6 +347,7 @@ function setupToolCarousel() {
     clone.id = "toolTrackClone";
     track.parentNode.appendChild(clone);
 }
+
 
 function openSkillContent(button, content, skill) {
     button.classList.add("open");
