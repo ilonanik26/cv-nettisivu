@@ -399,15 +399,20 @@ section h2::after,
     padding: 10px 0 30px;
 }
 
+.tool-marquee {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: tool-scroll 30s linear infinite;
+}
+
 .tool-track,
 #toolTrackClone {
     display: flex;
     align-items: center;
     gap: 34px;
-    width: max-content;
-    flex-wrap: nowrap;
+    flex: 0 0 auto;
     white-space: nowrap;
-    animation: tool-scroll 24s linear infinite;
 }
 
 #toolTrackClone {
@@ -424,8 +429,7 @@ section h2::after,
     }
 }
 
-.tool-carousel:hover .tool-track,
-.tool-carousel:hover #toolTrackClone {
+.tool-carousel:hover .tool-marquee {
     animation-play-state: paused;
 }
 
