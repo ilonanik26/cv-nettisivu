@@ -585,6 +585,123 @@ section h2::after,
     border-radius: 999px;
 }
 
+.contact-trigger {
+    appearance: none;
+    cursor: pointer;
+}
+
+.contact-trigger img {
+    width: 32px;
+    height: 32px;
+}
+
+.contact-modal {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    z-index: 3000;
+}
+
+.contact-modal.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.contact-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 7, 16, 0.58);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.contact-modal-content {
+    position: relative;
+    z-index: 1;
+    width: min(92vw, 420px);
+    padding: 28px 22px 24px;
+    border-radius: 28px;
+    background: rgba(14, 18, 34, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow:
+        0 24px 60px rgba(0, 0, 0, 0.35),
+        0 0 30px rgba(212, 84, 255, 0.12);
+    text-align: center;
+}
+
+.contact-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-main);
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.contact-modal-close:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: scale(1.05);
+}
+
+.contact-modal-icon {
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 16px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 64, 180, 0.85), rgba(143, 124, 255, 0.85));
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+.contact-modal-icon img {
+    width: 34px;
+    height: 34px;
+}
+
+.contact-modal-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+.contact-modal-content p {
+    color: var(--text-soft);
+    font-size: 1rem;
+    word-break: break-word;
+}
+
+@media (max-width: 640px) {
+    .contact-modal-content {
+        width: min(92vw, 360px);
+        padding: 24px 18px 20px;
+        border-radius: 22px;
+    }
+
+    .contact-modal-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-modal-icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 1024px) {

@@ -269,17 +269,44 @@
                         alt="Telegram">
                 </a>
 
-                <div class="contact-item">
+                <button
+                    type="button"
+                    class="icon contact-trigger"
+                    data-contact="email"
+                    aria-label="Show email address">
                     <img src="../cv-nettisivu/images/mail.svg" alt="Email">
-                    <span>ilona.nikulinaa@gmail.com</span>
-                </div>
+                </button>
 
-                <div class="contact-item">
+                <button
+                    type="button"
+                    class="icon contact-trigger"
+                    data-contact="phone"
+                    aria-label="Show phone number">
                     <img src="../cv-nettisivu/images/phone.svg" alt="Phone">
-                    <span>+358 44 246 4729</span>
-                </div>
+                </button>
             </div>
         </footer>
+        <div class="contact-modal" id="contactModal" aria-hidden="true">
+            <div class="contact-modal-backdrop" data-close-modal="true"></div>
+
+            <div
+                class="contact-modal-content"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="contactModalTitle">
+                <button
+                    type="button"
+                    class="contact-modal-close"
+                    id="contactModalClose"
+                    aria-label="Close popup">
+                    ×
+                </button>
+
+                <div class="contact-modal-icon" id="contactModalIcon"></div>
+                <h3 id="contactModalTitle"></h3>
+                <p id="contactModalValue"></p>
+            </div>
+        </div>
 
         <script src="../cv-nettisivu/main.js"></script>
     </body>

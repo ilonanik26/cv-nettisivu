@@ -61,7 +61,9 @@ const translations = {
             }
         },
         contact: {
-            title: "Yhteystiedot"
+            title: "Yhteystiedot",
+            emailTitle: "Sähköposti",
+            phoneTitle: "Puhelin"
         },
         skillInfo: {
             Frontend: `
@@ -209,8 +211,11 @@ const translations = {
             }
         },
         contact: {
-            title: "Contact"
+            title: "Contact",
+            emailTitle: "Email",
+            phoneTitle: "Phone"
         },
+
         skillInfo: {
             Frontend: `
                 <strong>HTML, CSS, JavaScript, Vue, React</strong><br><br>
@@ -297,6 +302,18 @@ const translations = {
 };
 
 let currentLanguage = localStorage.getItem("portfolioLanguage") || "fi";
+
+const contactDetails = {
+    email: {
+        value: "ilona.nikulinaa@gmail.com",
+        icon: "../cv-nettisivu/images/mail.svg"
+    },
+    phone: {
+        value: "+358 44 246 4729",
+        icon: "../cv-nettisivu/images/phone.svg"
+    }
+};
+
 
 function getNestedValue(obj, path) {
     return path.split(".").reduce((acc, key) => acc && acc[key], obj);
@@ -418,6 +435,55 @@ window.addEventListener("resize", () => {
         openContent.style.maxHeight = `${openContent.scrollHeight}px`;
     }
 });
+
+const contactModal = document.getElementById("contactModal");
+const contactModalTitle = document.getElementById("contactModalTitle");
+const contactModalValue = document.getElementById("contactModalValue");
+const contactModalIcon = document.getElementById("contactModalIcon");
+const contactModalClose = document.getElementById("contactModalClose");
+
+function openContactModal(type) {
+    const detail = contactDetails[type];
+    if (!detail) return;
+
+    const titleKey = type === "email" ? "contact.emailTitle" : "contact.phoneTitle";
+    const title = getNestedValue(translations[currentLanguage], titleKey);
+
+    contactModalTitle.textContent = title;
+    contactModalValue.textContent = detail.value;
+    contactModalIcon.innerHTML = `<img src="${detail.icon}" alt="${title}">`;
+
+    contactModal.classList.add("open");
+    contactModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+}
+
+function closeContactModal() {
+    contactModal.classList.remove("open");
+    contactModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+}
+
+document.querySelectorAll(".contact-trigger").forEach((button) => {
+    button.addEventListener("click", () => {
+        openContactModal(button.dataset.contact);
+    });
+});
+
+contactModalClose.addEventListener("click", closeContactModal);
+
+contactModal.addEventListener("click", (event) => {
+    if (event.target.dataset.closeModal === "true") {
+        closeContactModal();
+    }
+});
+
+window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && contactModal.classList.contains("open")) {
+        closeContactModal();
+    }
+});
+
 
 setLanguage(currentLanguage);
 
