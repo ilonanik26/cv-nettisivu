@@ -10,19 +10,19 @@ const translations = {
         },
         hero: {
             name: "Ilona Nikulina",
-            tagline: "Toisen vuoden tietojenkäsittelyn opiskelija, joka yrittää ja tykkää rakentaa moderneja käyttöliittymiä ja kehittää osaamistaan kohti uraa.",
+            tagline: "Toisen vuoden tietojenkäsittelyn opiskelija, joka nauttii modernien käyttöliittymien rakentamisesta ja kehittää osaamistaan kohti uraa frontendin, UI/UX:n ja datan parissa.",
             cta: "Katso projektit"
         },
         about: {
             title: "Minusta",
-            p1: "Olen 20-vuotias Tampereella asuva tietojenkäsittelyn opiskelija, ja opiskelen parhaillani toista vuotta TAMKissa. Suuntaudun mielelläni frontend-kehitykseen, koska pidän visuaalisuuden, logiikan ja käytettävyyden yhdistämisestä.",
-            p2: "HTML, CSS, JavaScript ja modernit työkalut kuten Vue ovat tällä hetkellä suurimpia kiinnostuksenkohteitani, mutta opiskelen innolla myös muita teknologioita, kuten Javaa, Pythonia, SQL:ää sekä data-analytiikkaa.",
+            p1: "Olen 20-vuotias Tampereella asuva tietojenkäsittelyn opiskelija, ja opiskelen parhaillani toista vuotta TAMKissa. Suuntaudun mielelläni frontend-kehitykseen ja UI/UX-puolelle, koska pidän visuaalisuuden, logiikan ja käytettävyyden yhdistämisestä.",
+            p2: "Olen kiinnostunut myös data-analytiikasta, koska nautin datan analysoinnista, tulkitsemisesta ja visualisoinnista. HTML, CSS, JavaScript ja modernit työkalut, kuten Vue, ovat tällä hetkellä suurimpia kiinnostuksenkohteitani, mutta opiskelen innolla myös Javaa, Pythonia, SQL:ää sekä data-analytiikkaa.",
             p3: "Olen luonteeltani rauhallinen, empaattinen ja helposti innostuva. Vapaa-ajalla tykkään käydä lenkillä, liikkua salilla ja nauttia kauniista maisemista.",
-            p4: "Tällä hetkellä etsin harjoittelu- tai kesätyöpaikkaa ja olen avoin myös junior-tason rooleille. Haluan kehittyä taitavaksi frontend-kehittäjäksi ja päästä osaksi tiimiä, jossa voin oppia, kasvaa ja tuoda oman panokseni projekteihin."
+            p4: "Tällä hetkellä etsin harjoittelu- tai kesätyöpaikkaa ja olen avoin myös junior-tason rooleille. Haluan kehittyä taitavaksi kehittäjäksi ja päästä osaksi tiimiä, jossa voin oppia, kasvaa ja tuoda oman panokseni projekteihin."
         },
         cv: {
             title: "CV",
-            education: "<strong>Koulutus:</strong> Tietojenkäsittely, TAMK (2024-2027) - painotus web-kehityksessä, käyttöliittymissä ja frontendissä.",
+            education: "<strong>Koulutus:</strong> Tietojenkäsittely, TAMK (2024-2027) - painotus web-kehityksessä, käyttöliittymissä, frontendissä, UI/UX:ssa ja data-analytiikassa.",
             projectsLabel: "Työkokemus ja projektit:",
             projectsIntro: "Itsenäisiä ja kouluprojekteja, esimerkiksi:",
             project1: "Budjetointisovellus (Vue.js + Vite)",
@@ -35,6 +35,7 @@ const translations = {
             courses: "<strong>Kurssit ja osaamisalueet:</strong> WWW-tekniikat, ohjelmoinnin perusteet, fullstack, olio-ohjelmointi, käyttäjäkeskeinen suunnittelu, UI/UX, Python, data-analytiikka, tekoäly ja data -projekti, ryhmäprojektit ja projektityöskentely.",
             languages: "<strong>Kielitaito:</strong> Suomi (C2), englanti (B2), venäjä (äidinkieli)."
         },
+
         skills: {
             title: "Taidot",
             frontend: "Frontend",
@@ -160,19 +161,19 @@ const translations = {
         },
         hero: {
             name: "Ilona Nikulina",
-            tagline: "Second-year Business Information Technology student who tries and likes to build modern interfaces and growing toward a career.",
+            tagline: "Second-year Business Information Technology student who enjoys building modern user interfaces and developing skills toward a career in frontend development, UI/UX, and data.",
             cta: "View Projects"
         },
         about: {
             title: "About Me",
-            p1: "I am a 20-year-old Business Information Technology student based in Tampere, currently in my second year at TAMK. I am especially interested in frontend development because I enjoy combining visual design, logic, and usability.",
-            p2: "HTML, CSS, JavaScript, and modern tools such as Vue are currently my biggest interests, but I am also excited to learn more about Java, Python, SQL, and data analytics.",
-            p3: "I would describe myself as calm, empathetic, and easy to get excited about new things. In my free time, I enjoy walking, working out, and enjoying beautiful scenery.",
-            p4: "At the moment, I am looking for an internship or summer job, and I am also open to junior-level opportunities. My goal is to grow into a skilled frontend developer and become part of a team where I can learn, develop, and contribute to meaningful projects."
+            p1: "I am a 20-year-old Business Information Technology student based in Tampere, currently in my second year at TAMK. I am especially interested in frontend development and UI/UX because I enjoy combining visual design, logic, and usability.",
+            p2: "I am also very interested in data analytics, because I enjoy analyzing, interpreting, and visualizing data. HTML, CSS, JavaScript, and modern tools such as Vue are currently my biggest interests, but I am also excited to continue learning Java, Python, SQL, and data analytics.",
+            p3: "I would describe myself as calm, empathetic, and easy to get excited about new things. In my free time, I enjoy walking, working out, and spending time in beautiful surroundings.",
+            p4: "At the moment, I am looking for an internship or summer job, and I am also open to junior-level opportunities. My goal is to grow into a skilled developer and become part of a team where I can learn, develop, and contribute to meaningful projects."
         },
         cv: {
             title: "CV",
-            education: "<strong>Education:</strong> Business Information Technology, TAMK (2024-2027) with a focus on web development, user interfaces, and frontend development.",
+            education: "<strong>Education:</strong> Business Information Technology, TAMK (2024-2027) with a focus on web development, user interfaces, frontend development, UI/UX, and data analytics.",
             projectsLabel: "Projects:",
             projectsIntro: "Independent and school projects, including:",
             project1: "Budget app (Vue.js + Vite)",
@@ -185,6 +186,7 @@ const translations = {
             courses: "<strong>Courses & areas of study:</strong> Web technologies, programming basics, fullstack development, object-oriented programming, user-centered design, UI/UX, Python, data analytics, AI and data project work, teamwork, and project-based development.",
             languages: "<strong>Languages:</strong> Finnish (C2), English (B2), Russian (native)."
         },
+
         skills: {
             title: "Skills",
             frontend: "Frontend",
