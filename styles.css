@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    font-family: system-ui, sans-serif;
+    font-family: "Space Grotesk", system-ui, sans-serif;
     color: var(--text-main);
     min-height: 100vh;
     padding: 32px 16px 64px;
@@ -263,6 +263,29 @@ section,
     border-radius: 50%;
     border: 4px solid rgba(255, 255, 255, 0.28);
     box-shadow: 0 16px 42px rgba(0, 0, 0, 0.35);
+}
+
+.hero-actions {
+    margin-top: 22px;
+}
+
+.hero-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(135deg, rgba(255, 64, 180, 0.88), rgba(143, 124, 255, 0.88));
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.28);
 }
 
 section h2,
@@ -537,6 +560,15 @@ section h2::after,
     font-size: 0.96rem;
 }
 
+.project-stack {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #ffd6f4;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
 /* ---------- Contact ---------- */
 
 .social-icons {
@@ -682,6 +714,23 @@ section h2::after,
     color: var(--text-soft);
     font-size: 1rem;
     word-break: break-word;
+}
+
+.contact-copy-btn {
+    margin-top: 16px;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(135deg, rgba(255, 64, 180, 0.88), rgba(143, 124, 255, 0.88));
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-copy-btn:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
 }
 
 @media (max-width: 640px) {

@@ -10,7 +10,8 @@ const translations = {
         },
         hero: {
             name: "Ilona Nikulina",
-            tagline: "Toisen vuoden tietojenkäsittelyn opiskelija, joka rakentaa moderneja käyttöliittymiä ja kehittää osaamistaan kohti uraa frontend-kehityksessä."
+            tagline: "Toisen vuoden tietojenkäsittelyn opiskelija, joka rakentaa moderneja käyttöliittymiä ja kehittää osaamistaan kohti uraa frontend-kehityksessä.",
+            cta: "Katso projektit"
         },
         about: {
             title: "Minusta",
@@ -49,27 +50,31 @@ const translations = {
         projects: {
             budget: {
                 title: "Budjet App",
-                desc: "Budjetointisovellus, joka on toteutettu Vue.js:llä ja Vitellä."
+                desc: "Budjetointisovellus, jossa keskityin käyttöliittymään, datan esittämiseen ja responsiiviseen toteutukseen.",
+                stack: "Vue.js • Vite • Responsive UI"
             },
             game: {
                 title: "Game Website",
-                desc: "Peliin liittyvä esittelysivu ja visuaalinen verkkoprojekti."
+                desc: "Peliprojektin esittelysivu, jossa rakensin rakenteen, visuaalisen ilmeen ja sisällön esittämisen.",
+                stack: "HTML • CSS • Layout • Visual Design"
             },
             band: {
                 title: "Poshlaya Molly -nettisivu",
-                desc: "Fanisivu, jossa keskityin visuaaliseen ilmeeseen ja rakenteeseen."
+                desc: "Fanisivu, jossa keskityin vahvaan visuaaliseen tyyliin, brändifiilikseen ja responsiiviseen rakenteeseen.",
+                stack: "HTML • CSS • Branding • Responsive Layout"
             }
         },
         contact: {
             title: "Yhteystiedot",
             emailTitle: "Sähköposti",
-            phoneTitle: "Puhelin"
+            phoneTitle: "Puhelin",
+            copy: "Kopioi",
+            copied: "Kopioitu!"
         },
         skillInfo: {
             Frontend: `
                 <strong>HTML, CSS, JavaScript, Vue, React</strong><br><br>
-                Olen rakentanut useita responsiivisia verkkosivuja sekä kouluprojekteissa että omissa harjoitustöissäni.
-                Aloitan yleensä HTML-rakenteesta, suunnittelen ulkoasun CSS:llä ja lisään toiminnallisuuden JavaScriptillä.<br><br>
+                Olen rakentanut useita responsiivisia verkkosivuja sekä kouluprojekteissa että omissa harjoitustöissäni. Aloitan yleensä HTML-rakenteesta, suunnittelen ulkoasun CSS:llä ja lisään toiminnallisuuden JavaScriptillä.<br><br>
                 <strong>JavaScript-osaaminen:</strong><br>
                 - DOM-käsittely ja event listenerit<br>
                 - Peruslogiikka (if, loopit, funktiot)<br>
@@ -83,8 +88,7 @@ const translations = {
             `,
             Backend: `
                 <strong>Java, Python, SQL, REST API -perusteet</strong><br><br>
-                Olen harjoitellut backend-kehitystä kouluprojektien ja kurssien kautta.
-                Ymmärrän palvelinpuolen peruslogiikan, datan käsittelyn ja REST-rajapintojen käytön.<br><br>
+                Olen harjoitellut backend-kehitystä kouluprojektien ja kurssien kautta. Ymmärrän palvelinpuolen peruslogiikan, datan käsittelyn ja REST-rajapintojen käytön.<br><br>
                 <strong>Mitä osaan backendissä:</strong><br>
                 - Perusohjelmointi Java & Python<br>
                 - SQL-kyselyt ja tietokantojen perusteet<br>
@@ -93,8 +97,7 @@ const translations = {
             `,
             UIUX: `
                 <strong>UI/UX-suunnittelu, Figma, käytettävyys & saavutettavuus</strong><br><br>
-                Olen opiskellut käyttöliittymä- ja käyttäjäkokemussuunnittelua useiden kurssien kautta.
-                Olen tehnyt wireframeja, prototyyppejä, käyttäjäpolkuja ja layoutteja.<br><br>
+                Olen opiskellut käyttöliittymä- ja käyttäjäkokemussuunnittelua useiden kurssien kautta. Olen tehnyt wireframeja, prototyyppejä, käyttäjäpolkuja ja layoutteja.<br><br>
                 <strong>Vahvuudet:</strong><br>
                 - Selkeä rakenne<br>
                 - Käyttäjäystävällisyys<br>
@@ -103,8 +106,7 @@ const translations = {
             `,
             Python: `
                 <strong>Python-ohjelmointi, data-analytiikka, Linux-ympäristö</strong><br><br>
-                Olen käyttänyt Pythonia ohjelmoinnin harjoitteluun ja dataprojekteihin.
-                Ensimmäinen isompi projektini oli tekstiseikkailupeli terminaaliin.<br><br>
+                Olen käyttänyt Pythonia ohjelmoinnin harjoitteluun ja dataprojekteihin. Ensimmäinen isompi projektini oli tekstiseikkailupeli terminaaliin.<br><br>
                 <strong>Mitä osaan Pythonissa:</strong><br>
                 - Funktiot, ehdot, silmukat ja peruslogiikka<br>
                 - Datan käsittelyn perusteet<br>
@@ -113,8 +115,7 @@ const translations = {
             `,
             Data: `
                 <strong>Data-analytiikan perusteet, Power BI, Excel</strong><br><br>
-                Olen aloittanut data-analytiikan opiskelun kurssilla, jossa harjoittelemme datan käsittelyä Power BI:llä.
-                Rakennan visualisointeja ja raportteja Excel-aineistoista.<br><br>
+                Olen aloittanut data-analytiikan opiskelun kurssilla, jossa harjoittelemme datan käsittelyä Power BI:llä. Rakennan visualisointeja ja raportteja Excel-aineistoista.<br><br>
                 <strong>Haluan oppia lisää:</strong><br>
                 - Datan visualisointi<br>
                 - Raportointi<br>
@@ -144,8 +145,7 @@ const translations = {
                         </div>
                     </div>
                 </div>
-`
-
+            `
         }
     },
 
@@ -160,7 +160,8 @@ const translations = {
         },
         hero: {
             name: "Ilona Nikulina",
-            tagline: "Second-year Business Information Technology student building modern interfaces and growing toward a career in frontend development."
+            tagline: "Second-year Business Information Technology student building modern interfaces and growing toward a career in frontend development.",
+            cta: "View Projects"
         },
         about: {
             title: "About Me",
@@ -199,28 +200,31 @@ const translations = {
         projects: {
             budget: {
                 title: "Budget App",
-                desc: "A budgeting application built with Vue.js and Vite."
+                desc: "A budgeting application where I focused on interface design, data presentation, and responsive implementation.",
+                stack: "Vue.js • Vite • Responsive UI"
             },
             game: {
                 title: "Game Website",
-                desc: "A visual project and presentation website related to a game."
+                desc: "A presentation website for a game project, where I built the layout, visual style, and content structure.",
+                stack: "HTML • CSS • Layout • Visual Design"
             },
             band: {
                 title: "Poshlaya Molly Website",
-                desc: "A fan website where I focused on visual identity and layout."
+                desc: "A fan website where I focused on strong visual identity, branding, and responsive layout.",
+                stack: "HTML • CSS • Branding • Responsive Layout"
             }
         },
         contact: {
             title: "Contact",
             emailTitle: "Email",
-            phoneTitle: "Phone"
+            phoneTitle: "Phone",
+            copy: "Copy",
+            copied: "Copied!"
         },
-
         skillInfo: {
             Frontend: `
                 <strong>HTML, CSS, JavaScript, Vue, React</strong><br><br>
-                I have built several responsive websites in both school projects and my own practice work.
-                I usually start with the HTML structure, then design the layout with CSS, and finally add functionality with JavaScript.<br><br>
+                I have built several responsive websites in both school projects and my own practice work. I usually start with the HTML structure, then design the layout with CSS, and finally add functionality with JavaScript.<br><br>
                 <strong>JavaScript skills:</strong><br>
                 - DOM manipulation and event listeners<br>
                 - Core logic (if statements, loops, functions)<br>
@@ -234,8 +238,7 @@ const translations = {
             `,
             Backend: `
                 <strong>Java, Python, SQL, REST API basics</strong><br><br>
-                I have practiced backend development through school projects and courses.
-                I understand the basics of server-side logic, data handling, and working with REST APIs.<br><br>
+                I have practiced backend development through school projects and courses. I understand the basics of server-side logic, data handling, and working with REST APIs.<br><br>
                 <strong>Backend skills:</strong><br>
                 - Basic programming in Java & Python<br>
                 - SQL queries and database fundamentals<br>
@@ -244,8 +247,7 @@ const translations = {
             `,
             UIUX: `
                 <strong>UI/UX design, Figma, usability & accessibility</strong><br><br>
-                I have studied UI and UX design through several courses.
-                I have created wireframes, prototypes, user flows, and layouts.<br><br>
+                I have studied UI and UX design through several courses. I have created wireframes, prototypes, user flows, and layouts.<br><br>
                 <strong>Strengths:</strong><br>
                 - Clear structure<br>
                 - User-friendliness<br>
@@ -254,8 +256,7 @@ const translations = {
             `,
             Python: `
                 <strong>Python programming, data analytics, Linux environment</strong><br><br>
-                I have used Python for programming practice and data-related projects.
-                My first larger project was a terminal-based text adventure game.<br><br>
+                I have used Python for programming practice and data-related projects. My first larger project was a terminal-based text adventure game.<br><br>
                 <strong>Python skills:</strong><br>
                 - Functions, conditions, loops, and core logic<br>
                 - Basic data handling<br>
@@ -264,8 +265,7 @@ const translations = {
             `,
             Data: `
                 <strong>Data analytics basics, Power BI, Excel</strong><br><br>
-                I started studying data analytics through a course where we practice data handling with Power BI.
-                I build visualizations and reports from Excel datasets.<br><br>
+                I started studying data analytics through a course where we practice data handling with Power BI. I build visualizations and reports from Excel datasets.<br><br>
                 <strong>What I want to learn more:</strong><br>
                 - Data visualization<br>
                 - Reporting<br>
@@ -296,12 +296,9 @@ const translations = {
                     </div>
                 </div>
             `
-
         }
     }
 };
-
-let currentLanguage = localStorage.getItem("portfolioLanguage") || "fi";
 
 const contactDetails = {
     email: {
@@ -314,6 +311,15 @@ const contactDetails = {
     }
 };
 
+let currentLanguage = localStorage.getItem("portfolioLanguage") || "fi";
+let activeContactValue = "";
+
+const contactModal = document.getElementById("contactModal");
+const contactModalTitle = document.getElementById("contactModalTitle");
+const contactModalValue = document.getElementById("contactModalValue");
+const contactModalIcon = document.getElementById("contactModalIcon");
+const contactModalClose = document.getElementById("contactModalClose");
+const contactCopyBtn = document.getElementById("contactCopyBtn");
 
 function getNestedValue(obj, path) {
     return path.split(".").reduce((acc, key) => acc && acc[key], obj);
@@ -333,10 +339,6 @@ function updateStaticText(lang) {
             key.startsWith("cv.languages")
         ) {
             element.innerHTML = value;
-        } else if (key === "cv.projectsLabel") {
-            element.textContent = value;
-        } else if (key === "cv.projectsIntro") {
-            element.textContent = value;
         } else {
             element.textContent = value;
         }
@@ -361,6 +363,9 @@ function setupToolCarousel() {
     const track = document.getElementById("toolTrack");
     if (!track) return;
 
+    const marquee = track.parentElement;
+    if (!marquee) return;
+
     const existingClone = document.getElementById("toolTrackClone");
     if (existingClone) {
         existingClone.remove();
@@ -368,9 +373,8 @@ function setupToolCarousel() {
 
     const clone = track.cloneNode(true);
     clone.id = "toolTrackClone";
-    track.parentNode.appendChild(clone);
+    marquee.appendChild(clone);
 }
-
 
 function openSkillContent(button, content, skill) {
     button.classList.add("open");
@@ -385,6 +389,33 @@ function openSkillContent(button, content, skill) {
     }
 }
 
+function openContactModal(type) {
+    const detail = contactDetails[type];
+    if (!detail || !contactModal) return;
+
+    const titleKey = type === "email" ? "contact.emailTitle" : "contact.phoneTitle";
+    const title = getNestedValue(translations[currentLanguage], titleKey);
+    const copyLabel = getNestedValue(translations[currentLanguage], "contact.copy");
+
+    activeContactValue = detail.value;
+    contactModalTitle.textContent = title;
+    contactModalValue.textContent = detail.value;
+    contactModalIcon.innerHTML = `<img src="${detail.icon}" alt="${title}">`;
+    contactCopyBtn.textContent = copyLabel;
+
+    contactModal.classList.add("open");
+    contactModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+}
+
+function closeContactModal() {
+    if (!contactModal) return;
+
+    contactModal.classList.remove("open");
+    contactModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+}
+
 function setLanguage(lang) {
     currentLanguage = lang;
     localStorage.setItem("portfolioLanguage", lang);
@@ -394,6 +425,7 @@ function setLanguage(lang) {
 
     document.querySelectorAll(".skill-toggle").forEach((button) => {
         const content = button.nextElementSibling;
+
         if (content.classList.contains("open")) {
             const skill = button.dataset.skill;
             content.innerHTML = translations[currentLanguage].skillInfo[skill] || "";
@@ -405,6 +437,10 @@ function setLanguage(lang) {
             }
         }
     });
+
+    if (contactModal && contactModal.classList.contains("open")) {
+        contactCopyBtn.textContent = getNestedValue(translations[currentLanguage], "contact.copy");
+    }
 }
 
 document.querySelectorAll(".skill-toggle").forEach((button) => {
@@ -429,61 +465,53 @@ document.querySelectorAll(".lang-btn").forEach((button) => {
     });
 });
 
-window.addEventListener("resize", () => {
-    const openContent = document.querySelector(".skill-content.open");
-    if (openContent) {
-        openContent.style.maxHeight = `${openContent.scrollHeight}px`;
-    }
-});
-
-const contactModal = document.getElementById("contactModal");
-const contactModalTitle = document.getElementById("contactModalTitle");
-const contactModalValue = document.getElementById("contactModalValue");
-const contactModalIcon = document.getElementById("contactModalIcon");
-const contactModalClose = document.getElementById("contactModalClose");
-
-function openContactModal(type) {
-    const detail = contactDetails[type];
-    if (!detail) return;
-
-    const titleKey = type === "email" ? "contact.emailTitle" : "contact.phoneTitle";
-    const title = getNestedValue(translations[currentLanguage], titleKey);
-
-    contactModalTitle.textContent = title;
-    contactModalValue.textContent = detail.value;
-    contactModalIcon.innerHTML = `<img src="${detail.icon}" alt="${title}">`;
-
-    contactModal.classList.add("open");
-    contactModal.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-}
-
-function closeContactModal() {
-    contactModal.classList.remove("open");
-    contactModal.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-}
-
 document.querySelectorAll(".contact-trigger").forEach((button) => {
     button.addEventListener("click", () => {
         openContactModal(button.dataset.contact);
     });
 });
 
-contactModalClose.addEventListener("click", closeContactModal);
+if (contactModalClose) {
+    contactModalClose.addEventListener("click", closeContactModal);
+}
 
-contactModal.addEventListener("click", (event) => {
-    if (event.target.dataset.closeModal === "true") {
-        closeContactModal();
-    }
-});
+if (contactModal) {
+    contactModal.addEventListener("click", (event) => {
+        if (event.target.dataset.closeModal === "true") {
+            closeContactModal();
+        }
+    });
+}
+
+if (contactCopyBtn) {
+    contactCopyBtn.addEventListener("click", async () => {
+        if (!activeContactValue) return;
+
+        try {
+            await navigator.clipboard.writeText(activeContactValue);
+            contactCopyBtn.textContent = getNestedValue(translations[currentLanguage], "contact.copied");
+
+            setTimeout(() => {
+                contactCopyBtn.textContent = getNestedValue(translations[currentLanguage], "contact.copy");
+            }, 1400);
+        } catch (error) {
+            contactCopyBtn.textContent = getNestedValue(translations[currentLanguage], "contact.copy");
+        }
+    });
+}
 
 window.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && contactModal.classList.contains("open")) {
+    if (event.key === "Escape" && contactModal && contactModal.classList.contains("open")) {
         closeContactModal();
     }
 });
 
+window.addEventListener("resize", () => {
+    const openContent = document.querySelector(".skill-content.open");
+
+    if (openContent) {
+        openContent.style.maxHeight = `${openContent.scrollHeight}px`;
+    }
+});
 
 setLanguage(currentLanguage);
-

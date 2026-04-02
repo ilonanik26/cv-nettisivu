@@ -8,6 +8,12 @@
             content="Ilona Nikulinan portfolio ja CV - frontend-kehityksestä, UI/UX-suunnittelusta ja moderneista web-projekteista kiinnostuneen opiskelijan sivu.">
         <title>Ilona Nikulina | Portfolio & CV</title>
         <link rel="stylesheet" href="../cv-nettisivu/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+            rel="stylesheet">
+
     </head>
     <body>
         <nav class="navbar" aria-label="Main navigation">
@@ -34,10 +40,16 @@
             <div class="hero-text">
                 <h1 data-i18n="hero.name">Ilona Nikulina</h1>
                 <p class="tagline" data-i18n="hero.tagline">
-                    Toisen vuoden tietojenkäsittelyn opiskelija, joka rakentaa
-                    moderneja käyttöliittymiä ja kehittää osaamistaan kohti uraa
-                    frontend-kehityksessä.
+                    Toisen vuoden tietojenkäsittelyn opiskelija, joka tykkää
+                    rakentaa
+                    moderneja käyttöliittymiä ja kehittää osaamistaan kohti
+                    uraa.
                 </p>
+
+                <div class="hero-actions">
+                    <a href="#portfolio" class="hero-cta"
+                        data-i18n="hero.cta">Katso projektit</a>
+                </div>
             </div>
 
             <div class="hero-image">
@@ -205,6 +217,9 @@
                         <h3 data-i18n="projects.budget.title">Budjet App</h3>
                         <p data-i18n="projects.budget.desc">Budjetointisovellus,
                             joka on toteutettu Vue.js:llä ja Vitellä.</p>
+                        <span class="project-stack"
+                            data-i18n="projects.budget.stack">Vue.js • Vite •
+                            Responsive UI</span>
                     </a>
 
                     <a
@@ -217,6 +232,9 @@
                         <h3 data-i18n="projects.game.title">Game Website</h3>
                         <p data-i18n="projects.game.desc">Peliin liittyvä
                             esittelysivu ja visuaalinen verkkoprojekti.</p>
+                        <span class="project-stack"
+                            data-i18n="projects.game.stack">HTML • CSS • Layout
+                            • Visual Design</span>
                     </a>
 
                     <a
@@ -231,9 +249,13 @@
                         <p data-i18n="projects.band.desc">Fanisivu, jossa
                             keskityin visuaaliseen ilmeeseen ja
                             rakenteeseen.</p>
+                        <span class="project-stack"
+                            data-i18n="projects.band.stack">HTML • CSS •
+                            Branding • Responsive Layout</span>
                     </a>
                 </div>
             </section>
+
         </main>
 
         <footer id="contact" class="contact">
@@ -305,6 +327,10 @@
                 <div class="contact-modal-icon" id="contactModalIcon"></div>
                 <h3 id="contactModalTitle"></h3>
                 <p id="contactModalValue"></p>
+                <button type="button" class="contact-copy-btn"
+                    id="contactCopyBtn" data-i18n="contact.copy">
+                    Kopioi
+                </button>
             </div>
         </div>
 
