@@ -10,12 +10,12 @@ const translations = {
         },
         hero: {
             name: "Ilona Nikulina",
-            tagline: "Toisen vuoden tietojenkäsittelyn opiskelija, joka nauttii modernien käyttöliittymien rakentamisesta ja kehittää osaamistaan kohti uraa frontendin, UI/UX:n ja datan parissa.",
+            tagline: "Kolmannen vuoden tietojenkäsittelyn opiskelija, joka nauttii modernien käyttöliittymien rakentamisesta ja kehittää osaamistaan kohti uraa frontendin, UI/UX:n ja datan parissa.",
             cta: "Katso projektit"
         },
         about: {
             title: "Minusta",
-            p1: "Olen 20-vuotias Tampereella asuva tietojenkäsittelyn opiskelija, ja opiskelen parhaillani toista vuotta TAMKissa. Suuntaudun mielelläni frontend-kehitykseen ja UI/UX-puolelle, koska pidän visuaalisuuden, logiikan ja käytettävyyden yhdistämisestä.",
+            p1: "Olen 20-vuotias Tampereella asuva tietojenkäsittelyn opiskelija, ja opiskelen parhaillani kolmatta vuotta TAMKissa. Suuntaudun mielelläni frontend-kehitykseen ja UI/UX-puolelle, koska pidän visuaalisuuden, logiikan ja käytettävyyden yhdistämisestä.",
             p2: "Olen kiinnostunut myös data-analytiikasta, koska nautin datan analysoinnista, tulkitsemisesta ja visualisoinnista. HTML, CSS, JavaScript ja modernit työkalut, kuten Vue, ovat tällä hetkellä suurimpia kiinnostuksenkohteitani, mutta opiskelen innolla myös Javaa, Pythonia, SQL:ää sekä data-analytiikkaa.",
             p3: "Olen luonteeltani rauhallinen, empaattinen ja helposti innostuva. Vapaa-ajalla tykkään käydä lenkillä, liikkua salilla ja nauttia kauniista maisemista.",
             p4: "Tällä hetkellä etsin harjoittelu- tai kesätyöpaikkaa ja olen avoin myös junior-tason rooleille. Haluan kehittyä taitavaksi kehittäjäksi ja päästä osaksi tiimiä, jossa voin oppia, kasvaa ja tuoda oman panokseni projekteihin."
@@ -128,21 +128,21 @@ const translations = {
                 <div class="tool-carousel">
                     <div class="tool-marquee">
                         <div class="tool-track" id="toolTrack">
-                            <div class="tool-item" data-name="HTML"><img src="../cv-nettisivu/images/logos/html.svg" alt="HTML"></div>
-                            <div class="tool-item" data-name="CSS"><img src="../cv-nettisivu/images/logos/css.svg" alt="CSS"></div>
-                            <div class="tool-item" data-name="JavaScript"><img src="../cv-nettisivu/images/logos/js.svg" alt="JavaScript"></div>
-                            <div class="tool-item" data-name="Vue.js"><img src="../cv-nettisivu/images/logos/vue.svg" alt="Vue.js"></div>
-                            <div class="tool-item" data-name="React"><img src="../cv-nettisivu/images/logos/react.svg" alt="React"></div>
-                            <div class="tool-item" data-name="Python"><img src="../cv-nettisivu/images/logos/python.svg" alt="Python"></div>
-                            <div class="tool-item" data-name="Java"><img src="../cv-nettisivu/images/logos/java.svg" alt="Java"></div>
-                            <div class="tool-item" data-name="SQL"><img src="../cv-nettisivu/images/logos/sql.svg" alt="SQL"></div>
-                            <div class="tool-item" data-name="Git"><img src="../cv-nettisivu/images/logos/git.svg" alt="Git"></div>
-                            <div class="tool-item" data-name="GitHub"><img src="../cv-nettisivu/images/logos/github.svg" alt="GitHub"></div>
-                            <div class="tool-item" data-name="VS Code"><img src="../cv-nettisivu/images/logos/vs-code.svg" alt="VS Code"></div>
-                            <div class="tool-item" data-name="Docker"><img src="../cv-nettisivu/images/logos/docker.svg" alt="Docker"></div>
-                            <div class="tool-item" data-name="Power BI"><img src="../cv-nettisivu/images/logos/powerbi.svg" alt="Power BI"></div>
-                            <div class="tool-item" data-name="Linux"><img src="../cv-nettisivu/images/logos/linux.svg" alt="Linux"></div>
-                            <div class="tool-item" data-name="Figma"><img src="../cv-nettisivu/images/logos/figma.svg" alt="Figma"></div>
+                            <div class="tool-item" data-name="HTML"><img src="images/logos/html.svg" alt="HTML"></div>
+                            <div class="tool-item" data-name="CSS"><img src="images/logos/css.svg" alt="CSS"></div>
+                            <div class="tool-item" data-name="JavaScript"><img src="images/logos/js.svg" alt="JavaScript"></div>
+                            <div class="tool-item" data-name="Vue.js"><img src="images/logos/vue.svg" alt="Vue.js"></div>
+                            <div class="tool-item" data-name="React"><img src="images/logos/react.svg" alt="React"></div>
+                            <div class="tool-item" data-name="Python"><img src="images/logos/python.svg" alt="Python"></div>
+                            <div class="tool-item" data-name="Java"><img src="images/logos/java.svg" alt="Java"></div>
+                            <div class="tool-item" data-name="SQL"><img src="images/logos/sql.svg" alt="SQL"></div>
+                            <div class="tool-item" data-name="Git"><img src="images/logos/git.svg" alt="Git"></div>
+                            <div class="tool-item" data-name="GitHub"><img src="images/logos/github.svg" alt="GitHub"></div>
+                            <div class="tool-item" data-name="VS Code"><img src="images/logos/vs-code.svg" alt="VS Code"></div>
+                            <div class="tool-item" data-name="Docker"><img src="images/logos/docker.svg" alt="Docker"></div>
+                            <div class="tool-item" data-name="Power BI"><img src="images/logos/powerbi.svg" alt="Power BI"></div>
+                            <div class="tool-item" data-name="Linux"><img src="images/logos/linux.svg" alt="Linux"></div>
+                            <div class="tool-item" data-name="Figma"><img src="images/logos/figma.svg" alt="Figma"></div>
                         </div>
                     </div>
                 </div>
@@ -161,12 +161,12 @@ const translations = {
         },
         hero: {
             name: "Ilona Nikulina",
-            tagline: "Second-year Business Information Technology student who enjoys building modern user interfaces and developing skills toward a career in frontend development, UI/UX, and data.",
+            tagline: "Third-year Business Information Technology student who enjoys building modern user interfaces and developing skills toward a career in frontend development, UI/UX, and data.",
             cta: "View Projects"
         },
         about: {
             title: "About Me",
-            p1: "I am a 20-year-old Business Information Technology student based in Tampere, currently in my second year at TAMK. I am especially interested in frontend development and UI/UX because I enjoy combining visual design, logic, and usability.",
+            p1: "I am a 20-year-old Business Information Technology student based in Tampere, currently in my third year at TAMK. I am especially interested in frontend development and UI/UX because I enjoy combining visual design, logic, and usability.",
             p2: "I am also very interested in data analytics, because I enjoy analyzing, interpreting, and visualizing data. HTML, CSS, JavaScript, and modern tools such as Vue are currently my biggest interests, but I am also excited to continue learning Java, Python, SQL, and data analytics.",
             p3: "I would describe myself as calm, empathetic, and easy to get excited about new things. In my free time, I enjoy walking, working out, and spending time in beautiful surroundings.",
             p4: "At the moment, I am looking for an internship or summer job, and I am also open to junior-level opportunities. My goal is to grow into a skilled developer and become part of a team where I can learn, develop, and contribute to meaningful projects."
@@ -279,21 +279,21 @@ const translations = {
                 <div class="tool-carousel">
                     <div class="tool-marquee">
                         <div class="tool-track" id="toolTrack">
-                            <div class="tool-item" data-name="HTML"><img src="../cv-nettisivu/images/logos/html.svg" alt="HTML"></div>
-                            <div class="tool-item" data-name="CSS"><img src="../cv-nettisivu/images/logos/css.svg" alt="CSS"></div>
-                            <div class="tool-item" data-name="JavaScript"><img src="../cv-nettisivu/images/logos/js.svg" alt="JavaScript"></div>
-                            <div class="tool-item" data-name="Vue.js"><img src="../cv-nettisivu/images/logos/vue.svg" alt="Vue.js"></div>
-                            <div class="tool-item" data-name="React"><img src="../cv-nettisivu/images/logos/react.svg" alt="React"></div>
-                            <div class="tool-item" data-name="Python"><img src="../cv-nettisivu/images/logos/python.svg" alt="Python"></div>
-                            <div class="tool-item" data-name="Java"><img src="../cv-nettisivu/images/logos/java.svg" alt="Java"></div>
-                            <div class="tool-item" data-name="SQL"><img src="../cv-nettisivu/images/logos/sql.svg" alt="SQL"></div>
-                            <div class="tool-item" data-name="Git"><img src="../cv-nettisivu/images/logos/git.svg" alt="Git"></div>
-                            <div class="tool-item" data-name="GitHub"><img src="../cv-nettisivu/images/logos/github.svg" alt="GitHub"></div>
-                            <div class="tool-item" data-name="VS Code"><img src="../cv-nettisivu/images/logos/vs-code.svg" alt="VS Code"></div>
-                            <div class="tool-item" data-name="Docker"><img src="../cv-nettisivu/images/logos/docker.svg" alt="Docker"></div>
-                            <div class="tool-item" data-name="Power BI"><img src="../cv-nettisivu/images/logos/powerbi.svg" alt="Power BI"></div>
-                            <div class="tool-item" data-name="Linux"><img src="../cv-nettisivu/images/logos/linux.svg" alt="Linux"></div>
-                            <div class="tool-item" data-name="Figma"><img src="../cv-nettisivu/images/logos/figma.svg" alt="Figma"></div>
+                            <div class="tool-item" data-name="HTML"><img src="images/logos/html.svg" alt="HTML"></div>
+                            <div class="tool-item" data-name="CSS"><img src="images/logos/css.svg" alt="CSS"></div>
+                            <div class="tool-item" data-name="JavaScript"><img src="images/logos/js.svg" alt="JavaScript"></div>
+                            <div class="tool-item" data-name="Vue.js"><img src="images/logos/vue.svg" alt="Vue.js"></div>
+                            <div class="tool-item" data-name="React"><img src="images/logos/react.svg" alt="React"></div>
+                            <div class="tool-item" data-name="Python"><img src="images/logos/python.svg" alt="Python"></div>
+                            <div class="tool-item" data-name="Java"><img src="images/logos/java.svg" alt="Java"></div>
+                            <div class="tool-item" data-name="SQL"><img src="images/logos/sql.svg" alt="SQL"></div>
+                            <div class="tool-item" data-name="Git"><img src="images/logos/git.svg" alt="Git"></div>
+                            <div class="tool-item" data-name="GitHub"><img src="images/logos/github.svg" alt="GitHub"></div>
+                            <div class="tool-item" data-name="VS Code"><img src="images/logos/vs-code.svg" alt="VS Code"></div>
+                            <div class="tool-item" data-name="Docker"><img src="images/logos/docker.svg" alt="Docker"></div>
+                            <div class="tool-item" data-name="Power BI"><img src="images/logos/powerbi.svg" alt="Power BI"></div>
+                            <div class="tool-item" data-name="Linux"><img src="images/logos/linux.svg" alt="Linux"></div>
+                            <div class="tool-item" data-name="Figma"><img src="images/logos/figma.svg" alt="Figma"></div>
                         </div>
                     </div>
                 </div>
@@ -305,11 +305,11 @@ const translations = {
 const contactDetails = {
     email: {
         value: "ilona.nikulinaa@gmail.com",
-        icon: "../cv-nettisivu/images/mail.svg"
+        icon: "images/mail.svg"
     },
     phone: {
         value: "+358 44 246 4729",
-        icon: "../cv-nettisivu/images/phone.svg"
+        icon: "images/phone.svg"
     }
 };
 
