@@ -95,6 +95,9 @@ const translations = {
             send: "Lähetä viesti",
             formError: "Täytä kaikki kentät ja tarkista sähköpostiosoite.",
             subject: "Viesti portfoliosivulta",
+            sending: "Lähetetään...",
+            sent: "Kiitos viestistä! Vastaan pian.",
+            sendFailed: "Viestin lähetys epäonnistui. Kokeile uudelleen tai lähetä sähköpostia.",
             emailTitle: "Sähköposti",
             phoneTitle: "Puhelin",
             copy: "Kopioi",
@@ -274,6 +277,9 @@ const translations = {
             send: "Send message",
             formError: "Please fill in every field and check the email address.",
             subject: "Message from your portfolio",
+            sending: "Sending...",
+            sent: "Thanks for your message! I'll get back to you soon.",
+            sendFailed: "Sending failed. Please try again or send me an email.",
             emailTitle: "Email",
             phoneTitle: "Phone",
             copy: "Copy",
@@ -596,11 +602,15 @@ window.addEventListener("resize", () => {
 
 /* ---------- Contact form ---------- */
 
+// Formspree delivers the messages to your email.
+// Paste your own form address here (formspree.io > your form > Integration).
+const FORMSPREE_URL = "https://formspree.io/f/mnpjnpjy";
+
 const contactForm = document.getElementById("contactForm");
 const contactError = document.getElementById("contactError");
 
 if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", async (event) => {
         event.preventDefault();
 
         const emailInput = document.getElementById("contactEmail");
@@ -608,30 +618,54 @@ if (contactForm) {
         const email = emailInput.value.trim();
         const message = document.getElementById("contactMessage").value.trim();
         const t = translations[currentLanguage].contact;
+        const sendButton = contactForm.querySelector("button[type=submit]");
+
+        contactError.classList.remove("form-success");
 
         if (!name || !email || !message || !emailInput.checkValidity()) {
             contactError.textContent = t.formError;
             return;
         }
 
-        contactError.textContent = "";
+        // Until the Formspree address is set, fall back to the visitor's email app.
+        if (FORMSPREE_URL.includes("OMA_TUNNUS")) {
+            contactError.textContent = "";
+            const body = `${message}\n\n${name}\n${email}`;
+            window.location.href =
+                `mailto:${contactDetails.email.value}` +
+                `?subject=${encodeURIComponent(t.subject)}` +
+                `&body=${encodeURIComponent(body)}`;
+            return;
+        }
 
-        // A static site has no server, so the form opens the visitor's
-        // email app with everything filled in.
-        const body = `${message}\n\n${name}\n${email}`;
-        window.location.href =
-            `mailto:${contactDetails.email.value}` +
-            `?subject=${encodeURIComponent(t.subject)}` +
-            `&body=${encodeURIComponent(body)}`;
+        sendButton.disabled = true;
+        contactError.textContent = t.sending;
+
+        try {
+            const response = await fetch(FORMSPREE_URL, {
+                method: "POST",
+                headers: { "Accept": "application/json" },
+                body: new FormData(contactForm)
+            });
+            if (!response.ok) throw new Error(response.status);
+
+            contactForm.reset();
+            contactError.textContent = t.sent;
+            contactError.classList.add("form-success");
+        } catch (error) {
+            contactError.textContent = t.sendFailed;
+        } finally {
+            sendButton.disabled = false;
+        }
     });
 }
 
 /* ---------- Power BI gallery ---------- */
 
 const galleryImages = [
-    "images/powerbi-dashboard.webp",
-    "images/powerbi-trendit.webp",
-    "images/powerbi-analyysi.webp"
+    "images/powerbi-dashboard.png",
+    "images/powerbi-trendit.png",
+    "images/powerbi-analyysi.png"
 ];
 const galleryModal = document.getElementById("galleryModal");
 const galleryImage = document.getElementById("galleryImage");

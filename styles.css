@@ -1089,9 +1089,18 @@ section h2 {
     color: var(--pink-deep);
 }
 
+.form-error.form-success {
+    color: var(--plum);
+}
+
 .contact-form .btn {
     align-self: flex-start;
     margin-top: 4px;
+}
+
+.contact-form .btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
 }
 
 /* Four project cards fit best two per row */

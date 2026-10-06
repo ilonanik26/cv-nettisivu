@@ -363,7 +363,7 @@
                     </div>
                 </div>
 
-                <!-- Contact form: opens the visitor's email app with the message filled in -->
+                <!-- Contact form: sent to your email through Formspree (address in main.js) -->
                 <form class="contact-form" id="contactForm" novalidate>
                     <h3 data-i18n="contact.formTitle">Lähetä viesti</h3>
 
@@ -381,6 +381,9 @@
                         data-i18n="contact.message">Viesti</label>
                     <textarea id="contactMessage" name="message" rows="5"
                         required></textarea>
+
+                    <input type="hidden" name="_subject"
+                        value="Viesti portfoliosivulta">
 
                     <p class="form-error" id="contactError" role="alert"></p>
 
