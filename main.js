@@ -23,10 +23,11 @@ const translations = {
             eyebrow: "Kuka olen",
             tagData: "Data-analytiikka",
             title: "Minusta",
-            p1: "Olen 20-vuotias Tampereella asuva tietojenkäsittelyn opiskelija, ja opiskelen parhaillani kolmatta vuotta TAMKissa. Suuntaudun mielelläni frontend-kehitykseen ja UI/UX-puolelle, koska pidän visuaalisuuden, logiikan ja käytettävyyden yhdistämisestä.",
-            p2: "Olen kiinnostunut myös data-analytiikasta, koska nautin datan analysoinnista, tulkitsemisesta ja visualisoinnista. HTML, CSS, JavaScript ja modernit työkalut, kuten Vue, ovat tällä hetkellä suurimpia kiinnostuksenkohteitani, mutta opiskelen innolla myös Javaa, Pythonia, SQL:ää sekä data-analytiikkaa.",
-            p3: "Olen luonteeltani rauhallinen, empaattinen ja helposti innostuva. Vapaa-ajalla tykkään käydä lenkillä, liikkua salilla ja nauttia kauniista maisemista.",
-            p4: "Tällä hetkellä etsin harjoittelu- tai kesätyöpaikkaa ja olen avoin myös junior-tason rooleille. Haluan kehittyä taitavaksi kehittäjäksi ja päästä osaksi tiimiä, jossa voin oppia, kasvaa ja tuoda oman panokseni projekteihin."
+            p1: "Olen 20-vuotias tietojenkäsittelyn opiskelija Tampereelta, ja opiskelen kolmatta vuotta TAMKissa. Kiinnostus alaan syttyi amiksen viimeisenä vuonna kurssilla. Huomasin viihtyväni koneen ääressä ja halusin oppia lisää.",
+            p2: "AMK:ssa innostuin ensin koodaamisesta. Pian kuitenkin huomasin, että eniten minua kiinnostavat Figma ja UI/UX-suunnittelu, tekoäly ja ennen kaikkea data-analytiikka, joka on ehdoton lempparini. Nautin siitä, kun datasta alkaa löytyä vastauksia ja ne saa näkymään selkeinä visualisointeina. HTML, CSS ja JavaScript ovat työkalujani, kun haluan tuoda suunnitelman verkkoon. Tekoälyä käytän vastuullisesti oppimisen tukena: kysyn neuvoa, pyydän esimerkkejä ja etsin sen avulla vinkkejä ja lähteitä.",
+            p3: "Tiimissä olen yleensä kuuntelija ja tekijä. Haluan ensin ymmärtää, mitä tavoitellaan, ja sitten tarttua toimeen. Usein minulta syntyy myös monta ideaa, ja jaan niitä mielelläni muille. Parasta on, kun yhdessä tehdystä työstä tulee sekä kaunis että toimiva.",
+            p4: "Vapaa-ajalla tasapainoa tuovat liikunta ja läheiset. Käyn lenkillä järven rannalla, treenaan salilla ja vietän aikaa rakkaiden ihmisten kanssa.",
+            p5: "Nyt etsin harjoittelupaikkaa, jossa pääsen oppimaan kokeneilta tekijöiltä ja tekemään oikeita projekteja. Vuoden päästä näen itseni data-analytiikan tai UI/UX-designin parissa, ja tavoitteeni on onnistua omissa hommissani ja kasvaa tiimin mukana."
         },
         cv: {
             eyebrow: "Tausta",
@@ -205,10 +206,11 @@ const translations = {
             eyebrow: "Who I am",
             tagData: "Data analytics",
             title: "About Me",
-            p1: "I am a 20-year-old Business Information Technology student based in Tampere, currently in my third year at TAMK. I am especially interested in frontend development and UI/UX because I enjoy combining visual design, logic, and usability.",
-            p2: "I am also very interested in data analytics, because I enjoy analyzing, interpreting, and visualizing data. HTML, CSS, JavaScript, and modern tools such as Vue are currently my biggest interests, but I am also excited to continue learning Java, Python, SQL, and data analytics.",
-            p3: "I would describe myself as calm, empathetic, and easy to get excited about new things. In my free time, I enjoy walking, working out, and spending time in beautiful surroundings.",
-            p4: "At the moment, I am looking for an internship or summer job, and I am also open to junior-level opportunities. My goal is to grow into a skilled developer and become part of a team where I can learn, develop, and contribute to meaningful projects."
+            p1: "I'm a 20-year-old Business Information Technology student from Tampere, currently in my third year at TAMK. My interest in the field started during my last year of vocational school. I noticed how much I enjoyed working on a computer and wanted to learn more.",
+            p2: "At university I was first excited about coding, but I soon realised that what interests me most is Figma and UI/UX design, AI, and above all data analytics, which is my absolute favourite. I love the moment when data starts giving answers and I can turn them into clear visualisations. HTML, CSS and JavaScript are my tools for bringing a design to the web. I use AI responsibly to support my learning: I ask for advice, request examples and use it to find tips and resources.",
+            p3: "In a team, I'm usually a listener and a doer. I want to understand the goal first and then get to work. I also often come up with lots of ideas and I'm happy to share them. The best part is when work we've done together turns out both beautiful and functional.",
+            p4: "In my free time, exercise and the people close to me keep me balanced. I go running by the lake, train at the gym and spend time with my loved ones.",
+            p5: "Right now I'm looking for an internship where I can learn from experienced people and work on real projects. A year from now, I see myself working in data analytics or UI/UX design, succeeding in my work and growing together with my team.",
         },
         cv: {
             eyebrow: "Background",
