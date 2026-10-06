@@ -6,14 +6,22 @@ const translations = {
             skills: "Taidot",
             portfolio: "Portfolio",
             cv: "CV",
-            contact: "Yhteystiedot"
+            contact: "Yhteystiedot",
+            cta: "Ota yhteyttä"
         },
         hero: {
+            status: "Etsin harjoittelua tai kesätyötä",
+            hello: "Hei, olen",
+            rolePrefix: "Tykkään rakentaa",
+            roles: ["moderneja käyttöliittymiä", "selkeitä UI/UX-ratkaisuja", "visualisointeja datasta", "responsiivisia sivuja"],
+            cta2: "Ota yhteyttä",
             name: "Ilona Nikulina",
             tagline: "Kolmannen vuoden tietojenkäsittelyn opiskelija, joka nauttii modernien käyttöliittymien rakentamisesta ja kehittää osaamistaan kohti uraa frontendin, UI/UX:n ja datan parissa.",
             cta: "Katso projektit"
         },
         about: {
+            eyebrow: "Kuka olen",
+            tagData: "Data-analytiikka",
             title: "Minusta",
             p1: "Olen 20-vuotias Tampereella asuva tietojenkäsittelyn opiskelija, ja opiskelen parhaillani kolmatta vuotta TAMKissa. Suuntaudun mielelläni frontend-kehitykseen ja UI/UX-puolelle, koska pidän visuaalisuuden, logiikan ja käytettävyyden yhdistämisestä.",
             p2: "Olen kiinnostunut myös data-analytiikasta, koska nautin datan analysoinnista, tulkitsemisesta ja visualisoinnista. HTML, CSS, JavaScript ja modernit työkalut, kuten Vue, ovat tällä hetkellä suurimpia kiinnostuksenkohteitani, mutta opiskelen innolla myös Javaa, Pythonia, SQL:ää sekä data-analytiikkaa.",
@@ -21,6 +29,7 @@ const translations = {
             p4: "Tällä hetkellä etsin harjoittelu- tai kesätyöpaikkaa ja olen avoin myös junior-tason rooleille. Haluan kehittyä taitavaksi kehittäjäksi ja päästä osaksi tiimiä, jossa voin oppia, kasvaa ja tuoda oman panokseni projekteihin."
         },
         cv: {
+            eyebrow: "Tausta",
             title: "CV",
             education: "<strong>Koulutus:</strong> Tietojenkäsittely, TAMK (2024-2027) - painotus web-kehityksessä, käyttöliittymissä, frontendissä, UI/UX:ssa ja data-analytiikassa.",
             projectsLabel: "Työkokemus ja projektit:",
@@ -37,6 +46,7 @@ const translations = {
         },
 
         skills: {
+            eyebrow: "Mitä osaan",
             title: "Taidot",
             frontend: "Frontend",
             backend: "Backend",
@@ -46,7 +56,9 @@ const translations = {
             tools: "Työkalut"
         },
         portfolio: {
-            title: "Portfolio"
+            eyebrow: "Valitut työt",
+            title: "Portfolio",
+            open: "Avaa sivu ↗"
         },
         projects: {
             budget: {
@@ -59,6 +71,13 @@ const translations = {
                 desc: "Peliprojektin esittelysivu, jossa rakensin rakenteen, visuaalisen ilmeen ja sisällön esittämisen.",
                 stack: "HTML • CSS • Layout • Visual Design"
             },
+            powerbi: {
+                title: "Myyntiraportti Power BI:llä",
+                desc: "Kolmen sivun raportti tilausdatasta vuosilta 2011-2014: tunnusluvut, vuosittaiset trendit sekä kategoria- ja maakohtainen analyysi. Tein omat DAX-mittarit ja päivämäärätaulun.",
+                stack: "Power BI • DAX • Data Modeling • Dashboards",
+                badge: "Katso 3 sivua ↗",
+                pages: ["Dashboard: tunnusluvut ja myynti kategorioittain", "Trendit: myynti, kate ja tilaukset vuosittain", "Kategoria- ja maa-analyysi asiakastason taulukolla"]
+            },
             band: {
                 title: "Poshlaya Molly -nettisivu",
                 desc: "Fanisivu, jossa keskityin vahvaan visuaaliseen tyyliin, brändifiilikseen ja responsiiviseen rakenteeseen.",
@@ -67,6 +86,15 @@ const translations = {
         },
         contact: {
             title: "Yhteystiedot",
+            big: "Tehdään jotain kivaa yhdessä!",
+            lead: "Etsin harjoittelu- tai kesätyöpaikkaa. Laita viestiä, niin jutellaan lisää.",
+            formTitle: "Lähetä viesti",
+            name: "Nimi",
+            email: "Sähköposti",
+            message: "Viesti",
+            send: "Lähetä viesti",
+            formError: "Täytä kaikki kentät ja tarkista sähköpostiosoite.",
+            subject: "Viesti portfoliosivulta",
             emailTitle: "Sähköposti",
             phoneTitle: "Puhelin",
             copy: "Kopioi",
@@ -157,14 +185,22 @@ const translations = {
             skills: "Skills",
             portfolio: "Portfolio",
             cv: "CV",
-            contact: "Contact"
+            contact: "Contact",
+            cta: "Get in touch"
         },
         hero: {
+            status: "Open to internships and summer jobs",
+            hello: "Hi, I'm",
+            rolePrefix: "I love building",
+            roles: ["modern user interfaces", "clear UI/UX solutions", "data visualizations", "responsive websites"],
+            cta2: "Get in touch",
             name: "Ilona Nikulina",
             tagline: "Third-year Business Information Technology student who enjoys building modern user interfaces and developing skills toward a career in frontend development, UI/UX, and data.",
             cta: "View Projects"
         },
         about: {
+            eyebrow: "Who I am",
+            tagData: "Data analytics",
             title: "About Me",
             p1: "I am a 20-year-old Business Information Technology student based in Tampere, currently in my third year at TAMK. I am especially interested in frontend development and UI/UX because I enjoy combining visual design, logic, and usability.",
             p2: "I am also very interested in data analytics, because I enjoy analyzing, interpreting, and visualizing data. HTML, CSS, JavaScript, and modern tools such as Vue are currently my biggest interests, but I am also excited to continue learning Java, Python, SQL, and data analytics.",
@@ -172,6 +208,7 @@ const translations = {
             p4: "At the moment, I am looking for an internship or summer job, and I am also open to junior-level opportunities. My goal is to grow into a skilled developer and become part of a team where I can learn, develop, and contribute to meaningful projects."
         },
         cv: {
+            eyebrow: "Background",
             title: "CV",
             education: "<strong>Education:</strong> Business Information Technology, TAMK (2024-2027) with a focus on web development, user interfaces, frontend development, UI/UX, and data analytics.",
             projectsLabel: "Projects:",
@@ -188,6 +225,7 @@ const translations = {
         },
 
         skills: {
+            eyebrow: "What I do",
             title: "Skills",
             frontend: "Frontend",
             backend: "Backend",
@@ -197,7 +235,9 @@ const translations = {
             tools: "Tools"
         },
         portfolio: {
-            title: "Portfolio"
+            eyebrow: "Selected work",
+            title: "Portfolio",
+            open: "Open site ↗"
         },
         projects: {
             budget: {
@@ -210,6 +250,13 @@ const translations = {
                 desc: "A presentation website for a game project, where I built the layout, visual style, and content structure.",
                 stack: "HTML • CSS • Layout • Visual Design"
             },
+            powerbi: {
+                title: "Sales Report in Power BI",
+                desc: "A three-page report on order data from 2011-2014: key figures, yearly trends, and category and country analysis. I wrote my own DAX measures and a date table.",
+                stack: "Power BI • DAX • Data Modeling • Dashboards",
+                badge: "See 3 pages ↗",
+                pages: ["Dashboard: key figures and sales by category", "Trends: sales, profit and orders by year", "Category and country analysis with a customer-level table"]
+            },
             band: {
                 title: "Poshlaya Molly Website",
                 desc: "A fan website where I focused on strong visual identity, branding, and responsive layout.",
@@ -218,6 +265,15 @@ const translations = {
         },
         contact: {
             title: "Contact",
+            big: "Let's build something fun together!",
+            lead: "I'm looking for an internship or a summer job. Send me a message and let's talk.",
+            formTitle: "Send a message",
+            name: "Name",
+            email: "Email",
+            message: "Message",
+            send: "Send message",
+            formError: "Please fill in every field and check the email address.",
+            subject: "Message from your portfolio",
             emailTitle: "Email",
             phoneTitle: "Phone",
             copy: "Copy",
@@ -332,7 +388,7 @@ function updateStaticText(lang) {
         const key = element.dataset.i18n;
         const value = getNestedValue(translations[lang], key);
 
-        if (!value) return;
+        if (!value || typeof value !== "string") return;
 
         if (
             key.startsWith("cv.education") ||
@@ -418,12 +474,34 @@ function closeContactModal() {
     document.body.style.overflow = "";
 }
 
+/* ---------- Rotating word in the hero ---------- */
+
+const roleWord = document.getElementById("roleWord");
+let roleIndex = 0;
+
+function showRole(index) {
+    const roles = translations[currentLanguage].hero.roles;
+    if (!roleWord || !roles) return;
+
+    roleWord.classList.remove("swap");
+    // Restart the small fade-in animation
+    void roleWord.offsetWidth;
+    roleWord.textContent = roles[index % roles.length];
+    roleWord.classList.add("swap");
+}
+
+setInterval(() => {
+    roleIndex += 1;
+    showRole(roleIndex);
+}, 2600);
+
 function setLanguage(lang) {
     currentLanguage = lang;
     localStorage.setItem("portfolioLanguage", lang);
     document.documentElement.lang = lang;
     updateStaticText(lang);
     updateLanguageButtons(lang);
+    showRole(roleIndex);
 
     document.querySelectorAll(".skill-toggle").forEach((button) => {
         const content = button.nextElementSibling;
@@ -515,5 +593,90 @@ window.addEventListener("resize", () => {
         openContent.style.maxHeight = `${openContent.scrollHeight}px`;
     }
 });
+
+/* ---------- Contact form ---------- */
+
+const contactForm = document.getElementById("contactForm");
+const contactError = document.getElementById("contactError");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const emailInput = document.getElementById("contactEmail");
+        const name = document.getElementById("contactName").value.trim();
+        const email = emailInput.value.trim();
+        const message = document.getElementById("contactMessage").value.trim();
+        const t = translations[currentLanguage].contact;
+
+        if (!name || !email || !message || !emailInput.checkValidity()) {
+            contactError.textContent = t.formError;
+            return;
+        }
+
+        contactError.textContent = "";
+
+        // A static site has no server, so the form opens the visitor's
+        // email app with everything filled in.
+        const body = `${message}\n\n${name}\n${email}`;
+        window.location.href =
+            `mailto:${contactDetails.email.value}` +
+            `?subject=${encodeURIComponent(t.subject)}` +
+            `&body=${encodeURIComponent(body)}`;
+    });
+}
+
+/* ---------- Power BI gallery ---------- */
+
+const galleryImages = [
+    "images/powerbi-dashboard.webp",
+    "images/powerbi-trendit.webp",
+    "images/powerbi-analyysi.webp"
+];
+const galleryModal = document.getElementById("galleryModal");
+const galleryImage = document.getElementById("galleryImage");
+const galleryCaption = document.getElementById("galleryCaption");
+let galleryIndex = 0;
+
+function showGalleryPage(index) {
+    const pages = translations[currentLanguage].projects.powerbi.pages;
+    galleryIndex = (index + galleryImages.length) % galleryImages.length;
+    galleryImage.src = galleryImages[galleryIndex];
+    galleryImage.alt = pages[galleryIndex];
+    galleryCaption.textContent = `${galleryIndex + 1} / ${galleryImages.length} · ${pages[galleryIndex]}`;
+}
+
+function openGallery() {
+    showGalleryPage(0);
+    galleryModal.classList.add("open");
+    galleryModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+}
+
+function closeGallery() {
+    galleryModal.classList.remove("open");
+    galleryModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+}
+
+if (galleryModal) {
+    document.getElementById("powerbiOpen").addEventListener("click", openGallery);
+    document.getElementById("galleryClose").addEventListener("click", closeGallery);
+    document.getElementById("galleryPrev").addEventListener("click", () => showGalleryPage(galleryIndex - 1));
+    document.getElementById("galleryNext").addEventListener("click", () => showGalleryPage(galleryIndex + 1));
+
+    galleryModal.addEventListener("click", (event) => {
+        if (event.target.dataset.closeGallery === "true") {
+            closeGallery();
+        }
+    });
+
+    window.addEventListener("keydown", (event) => {
+        if (!galleryModal.classList.contains("open")) return;
+        if (event.key === "Escape") closeGallery();
+        if (event.key === "ArrowLeft") showGalleryPage(galleryIndex - 1);
+        if (event.key === "ArrowRight") showGalleryPage(galleryIndex + 1);
+    });
+}
 
 setLanguage(currentLanguage);

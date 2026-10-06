@@ -5,109 +5,128 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta
             name="description"
-            content="Ilona Nikulinan portfolio ja CV - frontend-kehityksestä, UI/UX-suunnittelusta ja moderneista web-projekteista kiinnostuneen opiskelijan sivu.">
+            content="Ilona Nikulinan portfolio ja CV - frontend-kehityksestä, UI/UX-suunnittelusta ja data-analytiikasta kiinnostuneen opiskelijan sivu.">
         <title>Ilona Nikulina | Portfolio & CV</title>
+        <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
             rel="stylesheet">
-
     </head>
     <body>
+        <!-- ---------- Navigation ---------- -->
         <nav class="navbar" aria-label="Main navigation">
-            <div class="nav-left">Ilona</div>
+            <a href="#hero" class="nav-logo">
+                <span class="nav-dot" aria-hidden="true"></span>
+                <span>Ilona</span>
+            </a>
 
             <div class="nav-right">
-                <a href="#hero" data-i18n="nav.home">Etusivu</a>
                 <a href="#about" data-i18n="nav.about">Minusta</a>
                 <a href="#cv" data-i18n="nav.cv">CV</a>
                 <a href="#skills" data-i18n="nav.skills">Taidot</a>
                 <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
-                <a href="#contact" data-i18n="nav.contact">Yhteystiedot</a>
             </div>
 
-            <div class="language-switcher" aria-label="Language switcher">
-                <button class="lang-btn active" type="button"
-                    data-lang="fi">FI</button>
-                <button class="lang-btn" type="button"
-                    data-lang="en">EN</button>
+            <div class="nav-actions">
+                <div class="language-switcher" aria-label="Language switcher">
+                    <button class="lang-btn active" type="button"
+                        data-lang="fi">FI</button>
+                    <button class="lang-btn" type="button"
+                        data-lang="en">EN</button>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-small"
+                    data-i18n="nav.cta">Ota yhteyttä</a>
             </div>
         </nav>
 
+        <!-- ---------- Hero ---------- -->
         <header id="hero" class="hero">
             <div class="hero-text">
+                <span class="status-pill">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    <span data-i18n="hero.status">Etsin harjoittelua tai
+                        kesätyötä</span>
+                </span>
+
+                <p class="hero-hello" data-i18n="hero.hello">Hei, olen</p>
                 <h1 data-i18n="hero.name">Ilona Nikulina</h1>
+
+                <p class="hero-role">
+                    <span data-i18n="hero.rolePrefix">Tykkään rakentaa</span>
+                    <span class="role-word" id="roleWord">moderneja
+                        käyttöliittymiä</span>
+                </p>
+
                 <p class="tagline" data-i18n="hero.tagline">
-                    Kolmannen vuoden tietojenkäsittelyn opiskelija, joka tykkää
-                    rakentaa
-                    moderneja käyttöliittymiä ja kehittää osaamistaan kohti
-                    uraa.
+                    Kolmannen vuoden tietojenkäsittelyn opiskelija, joka nauttii
+                    modernien käyttöliittymien rakentamisesta.
                 </p>
 
                 <div class="hero-actions">
-                    <a href="#portfolio" class="hero-cta"
+                    <a href="#portfolio" class="btn btn-primary"
                         data-i18n="hero.cta">Katso projektit</a>
+                    <a href="#contact" class="btn btn-outline"
+                        data-i18n="hero.cta2">Ota yhteyttä</a>
                 </div>
             </div>
 
-            <div class="hero-image">
-                <img src="images/mypic.png"
-                    alt="Portrait of Ilona Nikulina">
+            <div class="hero-visual">
+                <div class="photo-blob">
+                    <img src="images/mypic.png"
+                        alt="Portrait of Ilona Nikulina">
+                </div>
+                <span class="sticker sticker-1">HTML &amp; CSS</span>
+                <span class="sticker sticker-2">Figma</span>
+                <span class="sticker sticker-3">Power BI</span>
             </div>
         </header>
 
         <main>
+            <!-- ---------- About ---------- -->
             <section id="about" class="about">
-                <h2 data-i18n="about.title">Minusta</h2>
+                <div class="about-text">
+                    <p class="eyebrow" data-i18n="about.eyebrow">Kuka olen</p>
+                    <h2 data-i18n="about.title">Minusta</h2>
 
-                <p data-i18n="about.p1">
-                    Olen 20-vuotias Tampereella asuva tietojenkäsittelyn
-                    opiskelija, ja opiskelen parhaillani kolmatta vuotta
-                    TAMKissa.
-                    Suuntaudun mielelläni frontend-kehitykseen, koska pidän
-                    visuaalisuuden, logiikan ja käytettävyyden yhdistämisestä.
-                </p>
+                    <p data-i18n="about.p1">
+                        Olen Tampereella asuva tietojenkäsittelyn opiskelija.
+                    </p>
+                    <p data-i18n="about.p2"></p>
+                    <p data-i18n="about.p3"></p>
+                    <p data-i18n="about.p4"></p>
 
-                <p data-i18n="about.p2">
-                    HTML, CSS, JavaScript ja modernit työkalut kuten Vue ovat
-                    tällä hetkellä suurimpia kiinnostuksenkohteitani, mutta
-                    opiskelen innolla myös muita teknologioita, kuten Javaa,
-                    Pythonia, SQL:ää sekä data-analytiikkaa.
-                </p>
-
-                <p data-i18n="about.p3">
-                    Olen luonteeltani rauhallinen, empaattinen ja helposti
-                    innostuva. Vapaa-ajalla tykkään käydä lenkillä, liikkua
-                    salilla ja nauttia kauniista maisemista.
-                </p>
-
-                <p data-i18n="about.p4">
-                    Tällä hetkellä etsin harjoittelu- tai kesätyöpaikkaa ja olen
-                    avoin myös junior-tason rooleille. Haluan kehittyä
-                    taitavaksi frontend-kehittäjäksi ja päästä osaksi tiimiä,
-                    jossa voin oppia, kasvaa ja tuoda oman panokseni
-                    projekteihin.
-                </p>
+                    <ul class="tag-list" aria-label="Kiinnostuksen kohteet">
+                        <li>Frontend</li>
+                        <li>UI / UX</li>
+                        <li>Vue.js</li>
+                        <li>JavaScript</li>
+                        <li>Figma</li>
+                        <li data-i18n="about.tagData">Data-analytiikka</li>
+                        <li>Power BI</li>
+                    </ul>
+                </div>
             </section>
 
+            <!-- ---------- CV ---------- -->
             <section id="cv" class="cv">
+                <p class="eyebrow" data-i18n="cv.eyebrow">Tausta</p>
                 <h2 data-i18n="cv.title">CV</h2>
 
-                <ul>
-                    <li data-i18n="cv.education">
+                <ul class="cv-grid">
+                    <li class="cv-card cv-card-wide" data-i18n="cv.education">
                         <strong>Koulutus:</strong>
-                        Tietojenkäsittely, TAMK (2024-2027) - painotus
-                        web-kehityksessä, käyttöliittymissä ja frontendissä.
+                        Tietojenkäsittely, TAMK (2024-2027).
                     </li>
 
-                    <li>
+                    <li class="cv-card cv-card-wide">
                         <strong data-i18n="cv.projectsLabel">Työkokemus ja
                             projektit:</strong>
                         <span data-i18n="cv.projectsIntro">Itsenäisiä ja
                             kouluprojekteja, esimerkiksi:</span>
-                        <ul>
+                        <ul class="cv-projects">
                             <li data-i18n="cv.project1">Budjetointisovellus
                                 (Vue.js + Vite)</li>
                             <li data-i18n="cv.project2">Pelisivusto /
@@ -124,87 +143,88 @@
                         </ul>
                     </li>
 
-                    <li data-i18n="cv.skillsText">
+                    <li class="cv-card" data-i18n="cv.skillsText">
                         <strong>Tekniset taidot:</strong>
-                        HTML, CSS, JavaScript, Vue.js, Vite, Git, GitHub,
-                        responsiivinen suunnittelu, UI/UX-perusteet, Figma,
-                        Java, SQL, Power BI, Windows-työkalut ja macOS.
                     </li>
 
-                    <li data-i18n="cv.courses">
+                    <li class="cv-card" data-i18n="cv.courses">
                         <strong>Kurssit ja osaamisalueet:</strong>
-                        WWW-tekniikat, ohjelmoinnin perusteet, fullstack,
-                        olio-ohjelmointi, käyttäjäkeskeinen suunnittelu, UI/UX,
-                        Python, data-analytiikka, tekoäly ja data -projekti,
-                        ryhmäprojektit ja projektityöskentely.
                     </li>
 
-                    <li data-i18n="cv.languages">
+                    <li class="cv-card" data-i18n="cv.languages">
                         <strong>Kielitaito:</strong>
                         Suomi (C2), englanti (B2), venäjä (äidinkieli).
                     </li>
                 </ul>
             </section>
 
+            <!-- ---------- Skills ---------- -->
             <section id="skills" class="skills">
+                <p class="eyebrow" data-i18n="skills.eyebrow">Mitä osaan</p>
                 <h2 data-i18n="skills.title">Taidot</h2>
 
-                <div class="skill-item">
-                    <button class="skill-toggle" data-skill="Frontend"
-                        type="button" aria-expanded="false">
-                        <span data-i18n="skills.frontend">Frontend</span>
-                        <span class="arrow" aria-hidden="true">▼</span>
-                    </button>
-                    <div class="skill-content"></div>
-                </div>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <button class="skill-toggle" data-skill="Frontend"
+                            type="button" aria-expanded="false">
+                            <span data-i18n="skills.frontend">Frontend</span>
+                            <span class="arrow" aria-hidden="true">+</span>
+                        </button>
+                        <div class="skill-content"></div>
+                    </div>
 
-                <div class="skill-item">
-                    <button class="skill-toggle" data-skill="Backend"
-                        type="button" aria-expanded="false">
-                        <span data-i18n="skills.backend">Backend</span>
-                        <span class="arrow" aria-hidden="true">▼</span>
-                    </button>
-                    <div class="skill-content"></div>
-                </div>
+                    <div class="skill-item">
+                        <button class="skill-toggle" data-skill="Backend"
+                            type="button" aria-expanded="false">
+                            <span data-i18n="skills.backend">Backend</span>
+                            <span class="arrow" aria-hidden="true">+</span>
+                        </button>
+                        <div class="skill-content"></div>
+                    </div>
 
-                <div class="skill-item">
-                    <button class="skill-toggle" data-skill="UIUX" type="button"
-                        aria-expanded="false">
-                        <span data-i18n="skills.uiux">UI / UX</span>
-                        <span class="arrow" aria-hidden="true">▼</span>
-                    </button>
-                    <div class="skill-content"></div>
-                </div>
+                    <div class="skill-item">
+                        <button class="skill-toggle" data-skill="UIUX"
+                            type="button" aria-expanded="false">
+                            <span data-i18n="skills.uiux">UI / UX</span>
+                            <span class="arrow" aria-hidden="true">+</span>
+                        </button>
+                        <div class="skill-content"></div>
+                    </div>
 
-                <div class="skill-item">
-                    <button class="skill-toggle" data-skill="Python"
-                        type="button" aria-expanded="false">
-                        <span data-i18n="skills.python">Python</span>
-                        <span class="arrow" aria-hidden="true">▼</span>
-                    </button>
-                    <div class="skill-content"></div>
-                </div>
+                    <div class="skill-item">
+                        <button class="skill-toggle" data-skill="Python"
+                            type="button" aria-expanded="false">
+                            <span data-i18n="skills.python">Python</span>
+                            <span class="arrow" aria-hidden="true">+</span>
+                        </button>
+                        <div class="skill-content"></div>
+                    </div>
 
-                <div class="skill-item">
-                    <button class="skill-toggle" data-skill="Data" type="button"
-                        aria-expanded="false">
-                        <span data-i18n="skills.data">Data-analytiikka</span>
-                        <span class="arrow" aria-hidden="true">▼</span>
-                    </button>
-                    <div class="skill-content"></div>
-                </div>
+                    <div class="skill-item">
+                        <button class="skill-toggle" data-skill="Data"
+                            type="button" aria-expanded="false">
+                            <span
+                                data-i18n="skills.data">Data-analytiikka</span>
+                            <span class="arrow" aria-hidden="true">+</span>
+                        </button>
+                        <div class="skill-content"></div>
+                    </div>
 
-                <div class="skill-item">
-                    <button class="skill-toggle" data-skill="Tools"
-                        type="button" aria-expanded="false">
-                        <span data-i18n="skills.tools">Työkalut</span>
-                        <span class="arrow" aria-hidden="true">▼</span>
-                    </button>
-                    <div class="skill-content"></div>
+                    <div class="skill-item">
+                        <button class="skill-toggle" data-skill="Tools"
+                            type="button" aria-expanded="false">
+                            <span data-i18n="skills.tools">Työkalut</span>
+                            <span class="arrow" aria-hidden="true">+</span>
+                        </button>
+                        <div class="skill-content"></div>
+                    </div>
                 </div>
             </section>
 
+            <!-- ---------- Portfolio ---------- -->
             <section id="portfolio" class="portfolio">
+                <p class="eyebrow" data-i18n="portfolio.eyebrow">Valitut
+                    työt</p>
                 <h2 data-i18n="portfolio.title">Portfolio</h2>
 
                 <div class="portfolio-grid">
@@ -213,11 +233,14 @@
                         class="project-card"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <img src="images/budjet-app.png"
-                            alt="Preview of the Budget App project">
+                        <div class="project-image">
+                            <img src="images/budjet-app.png"
+                                alt="Preview of the Budget App project">
+                            <span class="project-open"
+                                data-i18n="portfolio.open">Avaa sivu ↗</span>
+                        </div>
                         <h3 data-i18n="projects.budget.title">Budjet App</h3>
-                        <p data-i18n="projects.budget.desc">Budjetointisovellus,
-                            joka on toteutettu Vue.js:llä ja Vitellä.</p>
+                        <p data-i18n="projects.budget.desc"></p>
                         <span class="project-stack"
                             data-i18n="projects.budget.stack">Vue.js • Vite •
                             Responsive UI</span>
@@ -228,11 +251,14 @@
                         class="project-card"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <img src="images/game.png"
-                            alt="Preview of the Game Website project">
+                        <div class="project-image">
+                            <img src="images/game.png"
+                                alt="Preview of the Game Website project">
+                            <span class="project-open"
+                                data-i18n="portfolio.open">Avaa sivu ↗</span>
+                        </div>
                         <h3 data-i18n="projects.game.title">Game Website</h3>
-                        <p data-i18n="projects.game.desc">Peliin liittyvä
-                            esittelysivu ja visuaalinen verkkoprojekti.</p>
+                        <p data-i18n="projects.game.desc"></p>
                         <span class="project-stack"
                             data-i18n="projects.game.stack">HTML • CSS • Layout
                             • Visual Design</span>
@@ -243,72 +269,129 @@
                         class="project-card"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <img src="images/poshlaya-molly.png"
-                            alt="Preview of the Poshlaya Molly website">
+                        <div class="project-image">
+                            <img src="images/poshlaya-molly.png"
+                                alt="Preview of the Poshlaya Molly website">
+                            <span class="project-open"
+                                data-i18n="portfolio.open">Avaa sivu ↗</span>
+                        </div>
                         <h3 data-i18n="projects.band.title">Poshlaya Molly
                             -nettisivu</h3>
-                        <p data-i18n="projects.band.desc">Fanisivu, jossa
-                            keskityin visuaaliseen ilmeeseen ja
-                            rakenteeseen.</p>
+                        <p data-i18n="projects.band.desc"></p>
                         <span class="project-stack"
                             data-i18n="projects.band.stack">HTML • CSS •
                             Branding • Responsive Layout</span>
                     </a>
+
+                    <!-- Power BI: clicking the image opens all report pages -->
+                    <article class="project-card">
+                        <button type="button"
+                            class="project-image gallery-trigger"
+                            id="powerbiOpen">
+                            <img src="images/powerbi-dashboard.png"
+                                alt="Power BI sales dashboard">
+                            <span class="project-open"
+                                data-i18n="projects.powerbi.badge">Katso 3 sivua
+                                ↗</span>
+                        </button>
+                        <h3 data-i18n="projects.powerbi.title">Myyntiraportti
+                            Power BI:llä</h3>
+                        <p data-i18n="projects.powerbi.desc"></p>
+                        <span class="project-stack"
+                            data-i18n="projects.powerbi.stack">Power BI • DAX •
+                            Data Modeling • Dashboards</span>
+                    </article>
                 </div>
             </section>
-
         </main>
 
+        <!-- ---------- Contact ---------- -->
         <footer id="contact" class="contact">
-            <h2 data-i18n="contact.title">Yhteystiedot</h2>
+            <div class="contact-layout">
+                <div class="contact-card">
+                    <div class="contact-text">
+                        <h2 data-i18n="contact.big">Tehdään jotain kivaa
+                            yhdessä!</h2>
+                        <p data-i18n="contact.lead">Etsin harjoittelu- tai
+                            kesätyöpaikkaa. Laita viestiä, niin jutellaan
+                            lisää.</p>
+                    </div>
 
-            <div class="social-icons">
-                <a
-                    href="https://github.com/ilonanik26"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="icon"
-                    aria-label="GitHub profile">
-                    <img src="images/github.svg" alt="GitHub">
-                </a>
+                    <div class="social-icons">
+                        <a
+                            href="https://github.com/ilonanik26"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="icon"
+                            aria-label="GitHub profile">
+                            <img src="images/github.svg" alt="GitHub">
+                        </a>
 
-                <a
-                    href="https://www.linkedin.com/in/ilonanikulinaa"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="icon"
-                    aria-label="LinkedIn profile">
-                    <img src="images/linkedin.svg"
-                        alt="LinkedIn">
-                </a>
+                        <a
+                            href="https://www.linkedin.com/in/ilonanikulinaa"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="icon"
+                            aria-label="LinkedIn profile">
+                            <img src="images/linkedin.svg" alt="LinkedIn">
+                        </a>
 
-                <a
-                    href="https://t.me/ilonanikulinaa"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="icon"
-                    aria-label="Telegram profile">
-                    <img src="images/telegram.svg"
-                        alt="Telegram">
-                </a>
+                        <a
+                            href="https://t.me/ilonanikulinaa"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="icon"
+                            aria-label="Telegram profile">
+                            <img src="images/telegram.svg" alt="Telegram">
+                        </a>
 
-                <button
-                    type="button"
-                    class="icon contact-trigger"
-                    data-contact="email"
-                    aria-label="Show email address">
-                    <img src="images/mail.svg" alt="Email">
-                </button>
+                        <button
+                            type="button"
+                            class="icon contact-trigger"
+                            data-contact="email"
+                            aria-label="Show email address">
+                            <img src="images/mail.svg" alt="Email">
+                        </button>
 
-                <button
-                    type="button"
-                    class="icon contact-trigger"
-                    data-contact="phone"
-                    aria-label="Show phone number">
-                    <img src="images/phone.svg" alt="Phone">
-                </button>
+                        <button
+                            type="button"
+                            class="icon contact-trigger"
+                            data-contact="phone"
+                            aria-label="Show phone number">
+                            <img src="images/phone.svg" alt="Phone">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Contact form: opens the visitor's email app with the message filled in -->
+                <form class="contact-form" id="contactForm" novalidate>
+                    <h3 data-i18n="contact.formTitle">Lähetä viesti</h3>
+
+                    <label for="contactName"
+                        data-i18n="contact.name">Nimi</label>
+                    <input type="text" id="contactName" name="name"
+                        autocomplete="name" required>
+
+                    <label for="contactEmail"
+                        data-i18n="contact.email">Sähköposti</label>
+                    <input type="email" id="contactEmail" name="email"
+                        autocomplete="email" required>
+
+                    <label for="contactMessage"
+                        data-i18n="contact.message">Viesti</label>
+                    <textarea id="contactMessage" name="message" rows="5"
+                        required></textarea>
+
+                    <p class="form-error" id="contactError" role="alert"></p>
+
+                    <button type="submit" class="btn btn-primary"
+                        data-i18n="contact.send">Lähetä viesti</button>
+                </form>
             </div>
+
+            <p class="footer-note">© 2026 Ilona Nikulina</p>
         </footer>
+
         <div class="contact-modal" id="contactModal" aria-hidden="true">
             <div class="contact-modal-backdrop" data-close-modal="true"></div>
 
@@ -328,11 +411,33 @@
                 <div class="contact-modal-icon" id="contactModalIcon"></div>
                 <h3 id="contactModalTitle"></h3>
                 <p id="contactModalValue"></p>
-                <button type="button" class="contact-copy-btn"
+                <button type="button" class="btn btn-primary contact-copy-btn"
                     id="contactCopyBtn" data-i18n="contact.copy">
                     Kopioi
                 </button>
             </div>
+        </div>
+
+        <!-- Power BI report pages -->
+        <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+            <div class="contact-modal-backdrop" data-close-gallery="true"></div>
+
+            <figure class="gallery-content" role="dialog" aria-modal="true"
+                aria-labelledby="galleryCaption">
+                <button type="button" class="contact-modal-close"
+                    id="galleryClose" aria-label="Close">×</button>
+
+                <img id="galleryImage" src="images/powerbi-dashboard.png"
+                    alt>
+
+                <figcaption>
+                    <button type="button" class="gallery-nav" id="galleryPrev"
+                        aria-label="Previous page">←</button>
+                    <span id="galleryCaption"></span>
+                    <button type="button" class="gallery-nav" id="galleryNext"
+                        aria-label="Next page">→</button>
+                </figcaption>
+            </figure>
         </div>
 
         <script src="main.js"></script>
